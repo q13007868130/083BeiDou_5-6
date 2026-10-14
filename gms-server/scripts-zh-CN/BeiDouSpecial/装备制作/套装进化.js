@@ -38,6 +38,47 @@ var BOSS_NAMES = {
     8810018:"暗黑龙王",8880152:"露希妲"
 };
 
+// ---- 任务NPC形象开关 ----
+var SHOW_NPC_FACE = true;   // 是否在任务名前显示NPC立绘(#f)
+var SHOW_NPC_NAME = true;   // 是否在任务名前显示NPC名字(#p)
+
+// ---- 任务 → NPC（来源：Quest.wz Check.img 的 start/complete npc 需求）----
+var QUEST_NPC = {
+    2010:2100,2034:2100,2023:2100,2017:2100,
+    2070:1002100,2076:1012101,2072:1022007,2013:1022102,2028:1032100,2061:1032101,
+    2039:1032104,2043:1052103,2095:1022007,2119:1022102,2200:1092007,
+    3202:2041004,3209:2041005,3220:2040013,3243:2041004,3434:2050010,3437:2040017,
+    3615:2040052,3616:2040052,3617:2040052,3618:2040052,3630:2040052,3633:2040052,
+    3094:2020005,3077:2060100,3082:2060005,6134:1061011,
+    3512:2140000,6263:2020000,3912:2100001,3908:2101001,3918:2101006,3923:2101012,
+    3936:2101002,3954:2101010,3306:2111001,3317:2111007,6207:-1,3519:2140000,
+    "-31416":-1,"-31318":-1,"-27811":-1,"-27916":-1,"-31206":-1
+};
+
+// ---- NPC → 立绘WZ路径（来源：Npc.wz，优先 face 节点，否则 stand/0）----
+var NPC_FACE = {
+    1002100:"Npc/1002100.img/stand/0",1012101:"Npc/1012101.img/stand/0",
+    1022007:"Npc/1022007.img/stand/0",1022102:"Npc/1022102.img/stand/0",
+    1032100:"Npc/1032100.img/stand/0",1032101:"Npc/1032101.img/stand/0",
+    1032104:"Npc/1032104.img/stand/0",1052103:"Npc/1052103.img/stand/0",
+    1052105:"Npc/1052105.img/stand/0",1061004:"Npc/1061004.img/stand/0",
+    1061011:"Npc/1061011.img/stand/0",1081100:"Npc/1081100.img/stand/0",
+    1092007:"Npc/1092007.img/stand/0",2020000:"Npc/2020000.img/stand/0",
+    2020005:"Npc/2020005.img/stand/0",2040013:"Npc/2040013.img/stand/0",
+    2040017:"Npc/2040017.img/stand/0",2040052:"Npc/2040052.img/stand/0",
+    2041004:"Npc/2041004.img/stand/0",2041005:"Npc/2041005.img/stand/0",
+    2050010:"Npc/2050010.img/stand/0",2060005:"Npc/2060005.img/stand/0",
+    2060100:"Npc/2060100.img/stand/0",2100001:"Npc/2100001.img/stand/0",
+    2101001:"Npc/2101001.img/stand/0",2101002:"Npc/2101002.img/stand/0",
+    2101006:"Npc/2101006.img/stand/0",2101010:"Npc/2101010.img/stand/0",
+    2101012:"Npc/2101012.img/stand/0",2111001:"Npc/2111001.img/stand/0",
+    2111007:"Npc/2111007.img/stand/0",2140000:"Npc/2140000.img/stand/0"
+};
+
+// ---- 自定义/负数任务 的NPC覆盖（WZ里没有，按需手动填；填了才会显示立绘/名字）----
+// 例： 6207: 某个NPCid,  -31416: 某个NPCid
+var QUEST_NPC_OVERRIDE = {};
+
 // ============================================================================
 // 防具升级配置（10阶段）
 // jobType:"all" = 全职业通用 | jobType:"byJob" = 按职业分化
@@ -49,7 +90,7 @@ var ARMOR_STAGES = [
     {name:"30级套装",level:30,jobType:"all",
      equips:{cap:1003922,longcoat:1052638,shoes:1072844,glove:1082536},
      conditions:{
-        meso:10000000,cash:1000,
+        meso:1000000,cash:1000,
         items:[[4000007,100],[4000031,100],[4000039,100],[4000022,100],[1032000,1]],
         quests:[2010,2034,2023,2017],
         killMobs:[[1140100,100],[2130103,100],[3230300,100]],
@@ -60,7 +101,7 @@ var ARMOR_STAGES = [
     {name:"45级套装",level:45,jobType:"all",
      equips:{cap:1003242,longcoat:1052357,shoes:1072521,glove:1082314},
      conditions:{
-        meso:15000000,cash:2000,
+        meso:1500000,cash:2000,
         items:[[4000025,100],[4000021,100],[4000036,100],[4000032,100],[4000033,100],
                [4020000,10],[4020001,10],[4020002,10],[4020003,10],[4020004,10],
                [4020005,10],[4020006,10],[4020007,10],[4020008,10]],
@@ -73,7 +114,7 @@ var ARMOR_STAGES = [
     {name:"70级套装",level:70,jobType:"all",
      equips:{cap:1003243,longcoat:1052358,shoes:1072522,glove:1082315},
      conditions:{
-        meso:50000000,cash:3000,
+        meso:5000000,cash:3000,
         items:[[4000048,100],[4000057,100],[4000063,100],[4000074,100]],
         quests:[2039,2043,2095,2119,2200],
         killMobs:[[6230601,100],[6230100,100],[6130208,100],[7130104,100],[6130209,100]],
@@ -84,7 +125,7 @@ var ARMOR_STAGES = [
     {name:"80级套装",level:80,jobType:"all",
      equips:{cap:1003364,longcoat:1052405,shoes:1072610,glove:1082391},
      conditions:{
-        meso:70000000,cash:3500,
+        meso:7000000,cash:3500,
         items:[[4000078,100],[4000081,100],[4000088,100],[4000096,100],[4000098,100],
                [4000109,100],[4000104,100],[4000117,100]],
         quests:[3202,3209,3220,3243,3434,3437],
@@ -96,7 +137,7 @@ var ARMOR_STAGES = [
     {name:"100级套装",level:100,jobType:"all",
      equips:{cap:1003561,longcoat:1052467,shoes:1072672,glove:1082438},
      conditions:{
-        meso:100000000,cash:5000,
+        meso:10000000,cash:5000,
         items:[],
         quests:[3615,3616,3617,3618,3630,3633,3094,3077,3082,6134],
         killMobs:[[8140600,100],[8140701,100],[8140702,100],[8141100,100],[8141300,100],
@@ -110,7 +151,7 @@ var ARMOR_STAGES = [
     {name:"120级套装",level:120,jobType:"all",
      equips:{cap:1004549,longcoat:1052952,shoes:1073077,glove:1082658},
      conditions:{
-        meso:200000000,cash:6000,
+        meso:20000000,cash:6000,
         items:[[4000147,100],[4000157,100],[4000168,100],[4000176,10],[4000240,100],
                [4011000,50],[4011001,50],[4011002,50],[4011003,50],[4011004,50],
                [4011005,50],[4011006,50]],
@@ -128,7 +169,7 @@ var ARMOR_STAGES = [
      thief:{cap:1003175,longcoat:1052317,shoes:1072488,glove:1082298},
      pirate:{cap:1003176,longcoat:1052318,shoes:1072489,glove:1082299},
      conditions:{
-        meso:400000000,cash:7000,
+        meso:40000000,cash:7000,
         items:[[4021000,50],[4021001,50],[4021002,50],[4021003,50],[4021004,50],
                [4021005,50],[4021006,50],[4021007,50],[4021008,50]],
         quests:[3519],
@@ -147,7 +188,7 @@ var ARMOR_STAGES = [
      thief:{cap:1004425,longcoat:1052889,shoes:1073034,glove:1082639},
      pirate:{cap:1004426,longcoat:1052890,shoes:1073035,glove:1082640},
      conditions:{
-        meso:500000000,cash:7500,
+        meso:50000000,cash:7500,
         items:[[4021009,50],[4011007,50],[4011008,50],[4003002,100],
                [2012002,50],[4003000,50]],
         quests:[],
@@ -158,45 +199,45 @@ var ARMOR_STAGES = [
         specialDrops:[]}},
 
     // ============ 阶段8: Lv200 按职业分化 ============
-    {name:"200级套装",level:200,jobType:"byJob",
-     warrior:{cap:1004808,longcoat:1053063,shoes:1073158,glove:1082695},
-     mage:{cap:1004809,longcoat:1053064,shoes:1073159,glove:1082696},
-     archer:{cap:1004810,longcoat:1053065,shoes:1073160,glove:1082697},
-     thief:{cap:1004811,longcoat:1053066,shoes:1073161,glove:1082698},
-     pirate:{cap:1004812,longcoat:1053067,shoes:1073162,glove:1082699},
-     conditions:{
-        meso:800000000,cash:8000,
-        items:[[4005000,50],[4005002,50],[4005001,50],[4005003,50],[4251201,2]],
-        quests:[],
-        killMobs:[[8810018,10],
-                  [8600000,100],[8600001,100],[8600002,100],[8600003,100],
-                  [8600004,100],[8600005,100],[8600006,100],
-                  [8610005,100],[8610006,100],[8610007,100],[8610008,100],[8610009,100],
-                  [8610010,100],[8610011,100],[8610012,100],[8610013,100],[8610014,100]],
-        equipSacrifice:[],
-        equipSacrificeByJob:[
-            [{itemId:1005196,count:1},{itemId:1052804,count:1},{itemId:1042254,count:1},{itemId:1072967,count:1},{itemId:1082593,count:1}],
-            [{itemId:1005197,count:1},{itemId:1052805,count:1},{itemId:1042255,count:1},{itemId:1072968,count:1},{itemId:1082594,count:1}],
-            [{itemId:1005198,count:1},{itemId:1052806,count:1},{itemId:1042256,count:1},{itemId:1072969,count:1},{itemId:1082595,count:1}],
-            [{itemId:1005199,count:1},{itemId:1052807,count:1},{itemId:1042257,count:1},{itemId:1072970,count:1},{itemId:1082596,count:1}],
-            [{itemId:1005200,count:1},{itemId:1052808,count:1},{itemId:1042258,count:1},{itemId:1072971,count:1},{itemId:1082597,count:1}]
-        ],
-        specialDrops:[]}},
+    // {name:"200级套装",level:200,jobType:"byJob",
+    //  warrior:{cap:1004808,longcoat:1053063,shoes:1073158,glove:1082695},
+    //  mage:{cap:1004809,longcoat:1053064,shoes:1073159,glove:1082696},
+    //  archer:{cap:1004810,longcoat:1053065,shoes:1073160,glove:1082697},
+    //  thief:{cap:1004811,longcoat:1053066,shoes:1073161,glove:1082698},
+    //  pirate:{cap:1004812,longcoat:1053067,shoes:1073162,glove:1082699},
+    //  conditions:{
+    //     meso:800000000,cash:8000,
+    //     items:[[4005000,50],[4005002,50],[4005001,50],[4005003,50],[4251201,2]],
+    //     quests:[],
+    //     killMobs:[[8810018,10],
+    //               [8600000,100],[8600001,100],[8600002,100],[8600003,100],
+    //               [8600004,100],[8600005,100],[8600006,100],
+    //               [8610005,100],[8610006,100],[8610007,100],[8610008,100],[8610009,100],
+    //               [8610010,100],[8610011,100],[8610012,100],[8610013,100],[8610014,100]],
+    //     equipSacrifice:[],
+    //     equipSacrificeByJob:[
+    //         [{itemId:1005196,count:1},{itemId:1052804,count:1},{itemId:1042254,count:1},{itemId:1072967,count:1},{itemId:1082593,count:1}],
+    //         [{itemId:1005197,count:1},{itemId:1052805,count:1},{itemId:1042255,count:1},{itemId:1072968,count:1},{itemId:1082594,count:1}],
+    //         [{itemId:1005198,count:1},{itemId:1052806,count:1},{itemId:1042256,count:1},{itemId:1072969,count:1},{itemId:1082595,count:1}],
+    //         [{itemId:1005199,count:1},{itemId:1052807,count:1},{itemId:1042257,count:1},{itemId:1072970,count:1},{itemId:1082596,count:1}],
+    //         [{itemId:1005200,count:1},{itemId:1052808,count:1},{itemId:1042258,count:1},{itemId:1072971,count:1},{itemId:1082597,count:1}]
+    //     ],
+    //     specialDrops:[]}},
 
-    // ============ 阶段9: 永恒套装 按职业分化（5件套含裤子） ============
-    {name:"永恒套装",level:200,jobType:"byJob",
-     warrior:{cap:1005980,longcoat:1042433,pants:1062285,shoes:1073629,glove:1082760},
-     mage:{cap:1005981,longcoat:1042434,pants:1062286,shoes:1073630,glove:1082761},
-     archer:{cap:1005982,longcoat:1042435,pants:1062287,shoes:1073631,glove:1082762},
-     thief:{cap:1005983,longcoat:1042436,pants:1062288,shoes:1073632,glove:1082763},
-     pirate:{cap:1005984,longcoat:1042437,pants:1062289,shoes:1073633,glove:1082764},
-     conditions:{
-        meso:800000000,cash:8000,
-        items:[[1712001,10],[1712002,10],[1712003,10],[1712004,10],[1712005,10],[1712006,10]],
-        quests:[-31416,-31318,-27811,-27916,-31206],
-        killMobs:[[8880152,1]],
-        equipSacrifice:[],
-        specialDrops:[]}}
+    // // ============ 阶段9: 永恒套装 按职业分化（5件套含裤子） ============
+    // {name:"永恒套装",level:200,jobType:"byJob",
+    //  warrior:{cap:1005980,longcoat:1042433,pants:1062285,shoes:1073629,glove:1082760},
+    //  mage:{cap:1005981,longcoat:1042434,pants:1062286,shoes:1073630,glove:1082761},
+    //  archer:{cap:1005982,longcoat:1042435,pants:1062287,shoes:1073631,glove:1082762},
+    //  thief:{cap:1005983,longcoat:1042436,pants:1062288,shoes:1073632,glove:1082763},
+    //  pirate:{cap:1005984,longcoat:1042437,pants:1062289,shoes:1073633,glove:1082764},
+    //  conditions:{
+    //     meso:800000000,cash:8000,
+    //     items:[[1712001,10],[1712002,10],[1712003,10],[1712004,10],[1712005,10],[1712006,10]],
+    //     quests:[-31416,-31318,-27811,-27916,-31206],
+    //     killMobs:[[8880152,1]],
+    //     equipSacrifice:[],
+    //     specialDrops:[]}}
 ];
 
 // ---- 运行时 ----
@@ -211,7 +252,7 @@ function action(type, mode2, selection) {
     status++;
     if (status === 0) showMainMenu();
     else if (status === 1) handleMenuSelect(selection);
-    else if (status === 2) handleConfirm(selection);
+    else if (status === 2) handleConfirm();
     else cm.dispose();
 }
 
@@ -331,13 +372,29 @@ function buildConditionText(conds, targetIdx) {
         }
     }
 
-    // 任务（显示名字）
+    // 任务（显示对应NPC形象：立绘 + 名字）
     if (conds.quests.length > 0) {
         text += "\r\n#e任务要求：#n\r\n";
         for (var q = 0; q < conds.quests.length; q++) {
-            var done = cm.isQuestCompleted(conds.quests[q]);
-            var questName = getQuestName(conds.quests[q]);
-            text += (done ? "#g[已完成]#k " : "#r[未完成]#k ") + questName + "\r\n";
+            var qid = conds.quests[q];
+            var done = cm.isQuestCompleted(qid);
+            var questName = getQuestName(qid);
+            text += (done ? "#g[已完成]#k " : "#r[未完成]#k ");
+
+            // 解析任务NPC：优先覆盖表，其次固定映射
+            var npcId = -1;
+            if (QUEST_NPC_OVERRIDE.hasOwnProperty(qid)) npcId = QUEST_NPC_OVERRIDE[qid];
+            else if (QUEST_NPC.hasOwnProperty(qid)) npcId = QUEST_NPC[qid];
+
+            // NPC立绘（#f 内嵌WZ图片，仅在有可用脸节点时显示）
+            if (SHOW_NPC_FACE && npcId > 0 && NPC_FACE.hasOwnProperty(npcId)) {
+                text += "#f" + NPC_FACE[npcId] + "#";
+            }
+            // NPC名字（#p 文本标记）
+            if (SHOW_NPC_NAME && npcId > 0) {
+                text += "#p" + npcId + "# ";
+            }
+            text += questName + "\r\n";
         }
     }
 
@@ -382,8 +439,7 @@ function buildConditionText(conds, targetIdx) {
 // ============================================================================
 // 确认执行
 // ============================================================================
-function handleConfirm(sel) {
-    if (sel !== 1) { cm.dispose(); return; }
+function handleConfirm() {
     if (mode === "armor_upgrade") doArmorUpgrade();
     else cm.dispose();
 }

@@ -74,8 +74,8 @@ public class CharacterController {
     @Operation(summary = "GM修改角色昵称")
     @PutMapping("/" + ApiConstant.LATEST + "/{id}/changeName")
     public ResultBody<Object> changeName(@PathVariable int id,
-                                         @RequestBody Map<String, String> body) {
-        String newName = body.get("newName");
+                                         @RequestBody SubmitBody<Map<String, String>> submitBody) {
+        String newName = submitBody.getData().get("newName");
         characterService.changeCharacterName(id, newName);
         return ResultBody.success();
     }
