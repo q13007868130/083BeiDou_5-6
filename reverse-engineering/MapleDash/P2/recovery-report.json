@@ -1,0 +1,1437 @@
+[
+  {
+    "class": "InProcessTransport",
+    "method_total": 55,
+    "fully_translated": 30,
+    "excluded": 25,
+    "details": [
+      {
+        "method": ".ctor",
+        "token": "0x0600143A",
+        "rva": "0x000DF44C",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "ScriptValue",
+        "token": "0x0600143B",
+        "rva": "0x000DF45B",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Script",
+        "token": "0x0600143C",
+        "rva": "0x000DF46E",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Social",
+        "token": "0x0600143D",
+        "rva": "0x000DF481",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "PartyGrind",
+        "token": "0x0600143E",
+        "rva": "0x000DF494",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "BotTrade",
+        "token": "0x0600143F",
+        "rva": "0x000DF4A7",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Market",
+        "token": "0x06001440",
+        "rva": "0x000DF4BF",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Community",
+        "token": "0x06001441",
+        "rva": "0x000DF4D7",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Boss",
+        "token": "0x06001442",
+        "rva": "0x000DF4EA",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "ChangeInventory",
+        "token": "0x06001443",
+        "rva": "0x000DF4FD",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "UpdateEquip",
+        "token": "0x06001444",
+        "rva": "0x000DF510",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "StarForce",
+        "token": "0x06001445",
+        "rva": "0x000DF524",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "Potential",
+        "token": "0x06001446",
+        "rva": "0x000DF5D4",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "WeeklyGemstone",
+        "token": "0x06001447",
+        "rva": "0x000DF684",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "Symbol",
+        "token": "0x06001448",
+        "rva": "0x000DF6AC",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "HyperStat",
+        "token": "0x06001449",
+        "rva": "0x000DF758",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "InnerAbility",
+        "token": "0x0600144A",
+        "rva": "0x000DF7C8",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "Flame",
+        "token": "0x0600144B",
+        "rva": "0x000DF838",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "Soul",
+        "token": "0x0600144C",
+        "rva": "0x000DF8E4",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "RefreshGrowthMirror",
+        "token": "0x0600144D",
+        "rva": "0x000DF990",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "RefreshEnhancementMirror",
+        "token": "0x0600144E",
+        "rva": "0x000DFA08",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "RemoveSlot",
+        "token": "0x0600144F",
+        "rva": "0x000DFA99",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "VMatrix",
+        "token": "0x06001450",
+        "rva": "0x000DFAAC",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "Hexa",
+        "token": "0x06001451",
+        "rva": "0x000DFB00",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "HexaConvert",
+        "token": "0x06001452",
+        "rva": "0x000DFB54",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "HasNpcShop",
+        "token": "0x06001453",
+        "rva": "0x000DFC34",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "NpcShop",
+        "token": "0x06001454",
+        "rva": "0x000DFC47",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Duey",
+        "token": "0x06001455",
+        "rva": "0x000DFC5A",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Merchant",
+        "token": "0x06001456",
+        "rva": "0x000DFC6D",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "PlayerShop",
+        "token": "0x06001457",
+        "rva": "0x000DFC80",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Maker",
+        "token": "0x06001458",
+        "rva": "0x000DFC93",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Ranking",
+        "token": "0x06001459",
+        "rva": "0x000DFCA6",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Owl",
+        "token": "0x0600145A",
+        "rva": "0x000DFCB9",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Storage",
+        "token": "0x0600145B",
+        "rva": "0x000DFCCC",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Macro",
+        "token": "0x0600145C",
+        "rva": "0x000DFCDF",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Report",
+        "token": "0x0600145D",
+        "rva": "0x000DFCF2",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Arena",
+        "token": "0x0600145E",
+        "rva": "0x000DFD05",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Rps",
+        "token": "0x0600145F",
+        "rva": "0x000DFD18",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Memo",
+        "token": "0x06001460",
+        "rva": "0x000DFD2B",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Tv",
+        "token": "0x06001461",
+        "rva": "0x000DFD3E",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Carnival",
+        "token": "0x06001462",
+        "rva": "0x000DFD51",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Cash",
+        "token": "0x06001463",
+        "rva": "0x000DFD64",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "EndSocialSession",
+        "token": "0x06001464",
+        "rva": "0x000DFD78",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Login",
+        "token": "0x06001465",
+        "rva": "0x000DFE10",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "SetGender",
+        "token": "0x06001466",
+        "rva": "0x000DFE88",
+        "status": "not-recovered",
+        "reason": "unsupported opcode bne.un.s"
+      },
+      {
+        "method": "ServerList",
+        "token": "0x06001467",
+        "rva": "0x000DFEE6",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "CharList",
+        "token": "0x06001468",
+        "rva": "0x000DFF04",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "CheckCharName",
+        "token": "0x06001469",
+        "rva": "0x000DFF54",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "CreateChar",
+        "token": "0x0600146A",
+        "rva": "0x000DFFC4",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "DeleteChar",
+        "token": "0x0600146B",
+        "rva": "0x000E0074",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "CharSelect",
+        "token": "0x0600146C",
+        "rva": "0x000E00E8",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "ImportLegacy",
+        "token": "0x0600146D",
+        "rva": "0x000E0145",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "PlayerDead",
+        "token": "0x0600146E",
+        "rva": "0x000E0168",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "ChangeMap",
+        "token": "0x0600146F",
+        "rva": "0x000E0260",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "SaveCharacter",
+        "token": "0x06001470",
+        "rva": "0x000E04DC",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      }
+    ]
+  },
+  {
+    "class": "GameServer",
+    "method_total": 37,
+    "fully_translated": 26,
+    "excluded": 11,
+    "details": [
+      {
+        "method": "get_Db",
+        "token": "0x060013BF",
+        "rva": "0x000DE8EB",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Db",
+        "token": "0x060013C0",
+        "rva": "0x000DE8F3",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Transport",
+        "token": "0x060013C1",
+        "rva": "0x000DE8FC",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Transport",
+        "token": "0x060013C2",
+        "rva": "0x000DE904",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_MapInfo",
+        "token": "0x060013C3",
+        "rva": "0x000DE90D",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_MapInfo",
+        "token": "0x060013C4",
+        "rva": "0x000DE915",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "add_TradeInventoryCommitted",
+        "token": "0x060013C5",
+        "rva": "0x000DE920",
+        "status": "not-recovered",
+        "reason": "unsupported opcode castclass"
+      },
+      {
+        "method": "remove_TradeInventoryCommitted",
+        "token": "0x060013C6",
+        "rva": "0x000DE958",
+        "status": "not-recovered",
+        "reason": "unsupported opcode castclass"
+      },
+      {
+        "method": "ActiveBotPlayer",
+        "token": "0x060013C7",
+        "rva": "0x000DE98D",
+        "status": "not-recovered",
+        "reason": "unsupported opcode dup"
+      },
+      {
+        "method": "get_Bots",
+        "token": "0x060013C8",
+        "rva": "0x000DE9A4",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "get_ScriptValues",
+        "token": "0x060013C9",
+        "rva": "0x000DEA02",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_ScriptValues",
+        "token": "0x060013CA",
+        "rva": "0x000DEA0A",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Scripts",
+        "token": "0x060013CB",
+        "rva": "0x000DEA13",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Scripts",
+        "token": "0x060013CC",
+        "rva": "0x000DEA1B",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Social",
+        "token": "0x060013CD",
+        "rva": "0x000DEA24",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Social",
+        "token": "0x060013CE",
+        "rva": "0x000DEA2C",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Community",
+        "token": "0x060013CF",
+        "rva": "0x000DEA35",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Community",
+        "token": "0x060013D0",
+        "rva": "0x000DEA3D",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Cash",
+        "token": "0x060013D1",
+        "rva": "0x000DEA46",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Cash",
+        "token": "0x060013D2",
+        "rva": "0x000DEA4E",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_NpcShops",
+        "token": "0x060013D3",
+        "rva": "0x000DEA57",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_NpcShops",
+        "token": "0x060013D4",
+        "rva": "0x000DEA5F",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Bosses",
+        "token": "0x060013D5",
+        "rva": "0x000DEA68",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Bosses",
+        "token": "0x060013D6",
+        "rva": "0x000DEA70",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Weather",
+        "token": "0x060013D7",
+        "rva": "0x000DEA79",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Weather",
+        "token": "0x060013D8",
+        "rva": "0x000DEA81",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Backdrops",
+        "token": "0x060013D9",
+        "rva": "0x000DEA8A",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Local",
+        "token": "0x060013DA",
+        "rva": "0x000DEA92",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Local",
+        "token": "0x060013DB",
+        "rva": "0x000DEA99",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "Start",
+        "token": "0x060013DC",
+        "rva": "0x000DEAA4",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "StartWith",
+        "token": "0x060013DD",
+        "rva": "0x000DECB0",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "Stop",
+        "token": "0x060013DE",
+        "rva": "0x000DEE42",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "Save",
+        "token": "0x060013DF",
+        "rva": "0x000DEE75",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "EndBotSession",
+        "token": "0x060013E0",
+        "rva": "0x000DEE82",
+        "status": "not-recovered",
+        "reason": "unsupported opcode dup"
+      },
+      {
+        "method": "RouteBotChat",
+        "token": "0x060013E1",
+        "rva": "0x000DEE98",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": ".ctor",
+        "token": "0x060013E2",
+        "rva": "0x000DEEF7",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "<get_Bots>b__18_0",
+        "token": "0x060013E3",
+        "rva": "0x000DEF0A",
+        "status": "not-recovered",
+        "reason": "unsupported opcode dup"
+      }
+    ]
+  },
+  {
+    "class": "DbStore",
+    "method_total": 34,
+    "fully_translated": 2,
+    "excluded": 32,
+    "details": [
+      {
+        "method": "get_FilePath",
+        "token": "0x060012F1",
+        "rva": "0x000D9F3E",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "get_Dirty",
+        "token": "0x060012F2",
+        "rva": "0x000D9F46",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "Create",
+        "token": "0x060012F3",
+        "rva": "0x000D9F4E",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "Open",
+        "token": "0x060012F4",
+        "rva": "0x000D9F68",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "LoadSchema",
+        "token": "0x060012F5",
+        "rva": "0x000D9FBC",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldstr"
+      },
+      {
+        "method": "Parse",
+        "token": "0x060012F6",
+        "rva": "0x000D9FF0",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "StripTrailingComment",
+        "token": "0x060012F7",
+        "rva": "0x000DA0B4",
+        "status": "not-recovered",
+        "reason": "unsupported opcode br.s"
+      },
+      {
+        "method": "ParseCreate",
+        "token": "0x060012F8",
+        "rva": "0x000DA118",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "ParseInsert",
+        "token": "0x060012F9",
+        "rva": "0x000DA4D0",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "SplitTuples",
+        "token": "0x060012FA",
+        "rva": "0x000DA660",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "Unquote",
+        "token": "0x060012FB",
+        "rva": "0x000DA6F0",
+        "status": "not-recovered",
+        "reason": "unsupported opcode blt.s"
+      },
+      {
+        "method": "ParseLong",
+        "token": "0x060012FC",
+        "rva": "0x000DA744",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "ParseDouble",
+        "token": "0x060012FD",
+        "rva": "0x000DA768",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "SplitTop",
+        "token": "0x060012FE",
+        "rva": "0x000DA794",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "Table",
+        "token": "0x060012FF",
+        "rva": "0x000DA850",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "HasTable",
+        "token": "0x06001300",
+        "rva": "0x000DA87F",
+        "status": "not-recovered",
+        "reason": "external or generic call token 0x0A000B9F"
+      },
+      {
+        "method": "get_TableNames",
+        "token": "0x06001301",
+        "rva": "0x000DA88D",
+        "status": "not-recovered",
+        "reason": "external or generic call token 0x0A000BA0"
+      },
+      {
+        "method": "BeginTransaction",
+        "token": "0x06001302",
+        "rva": "0x000DA89C",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "Commit",
+        "token": "0x06001303",
+        "rva": "0x000DAA00",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "Rollback",
+        "token": "0x06001304",
+        "rva": "0x000DAA50",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "DeferSaves",
+        "token": "0x06001305",
+        "rva": "0x000DAB24",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "Save",
+        "token": "0x06001306",
+        "rva": "0x000DAB3C",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "WriteRow",
+        "token": "0x06001307",
+        "rva": "0x000DACB4",
+        "status": "not-recovered",
+        "reason": "unsupported opcode pop"
+      },
+      {
+        "method": "WriteValue",
+        "token": "0x06001308",
+        "rva": "0x000DAD58",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "Escape",
+        "token": "0x06001309",
+        "rva": "0x000DAE29",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldstr"
+      },
+      {
+        "method": "ReadJson",
+        "token": "0x0600130A",
+        "rva": "0x000DAE68",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "NowText",
+        "token": "0x0600130B",
+        "rva": "0x000DB058",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "Eq",
+        "token": "0x0600130C",
+        "rva": "0x000DB07C",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "GuessType",
+        "token": "0x0600130D",
+        "rva": "0x000DB09C",
+        "status": "not-recovered",
+        "reason": "unsupported opcode isinst"
+      },
+      {
+        "method": "Long",
+        "token": "0x0600130E",
+        "rva": "0x000DB0CC",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "Int",
+        "token": "0x0600130F",
+        "rva": "0x000DB114",
+        "status": "not-recovered",
+        "reason": "unsupported opcode conv.i8"
+      },
+      {
+        "method": "Dbl",
+        "token": "0x06001310",
+        "rva": "0x000DB120",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "Str",
+        "token": "0x06001311",
+        "rva": "0x000DB168",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": ".ctor",
+        "token": "0x06001312",
+        "rva": "0x000DB19A",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      }
+    ]
+  },
+  {
+    "class": "LoginService",
+    "method_total": 5,
+    "fully_translated": 1,
+    "excluded": 4,
+    "details": [
+      {
+        "method": "IsNoPasswordAccount",
+        "token": "0x060013E5",
+        "rva": "0x000DEF2E",
+        "status": "not-recovered",
+        "reason": "unsupported opcode dup"
+      },
+      {
+        "method": "Login",
+        "token": "0x060013E6",
+        "rva": "0x000DEF4C",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "SetGender",
+        "token": "0x060013E7",
+        "rva": "0x000DF0D0",
+        "status": "not-recovered",
+        "reason": "unsupported opcode beq.s"
+      },
+      {
+        "method": "IsTempBanned",
+        "token": "0x060013E8",
+        "rva": "0x000DF104",
+        "status": "not-recovered",
+        "reason": "unsupported opcode stind.ref"
+      },
+      {
+        "method": "Logout",
+        "token": "0x060013E9",
+        "rva": "0x000DF146",
+        "status": "recovered",
+        "reason": null
+      }
+    ]
+  },
+  {
+    "class": "WorldService",
+    "method_total": 3,
+    "fully_translated": 1,
+    "excluded": 2,
+    "details": [
+      {
+        "method": "Worlds",
+        "token": "0x060018DD",
+        "rva": "0x0011ABA4",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "Channels",
+        "token": "0x060018DE",
+        "rva": "0x0011AE18",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "ChannelLoad",
+        "token": "0x060018DF",
+        "rva": "0x0011AEAE",
+        "status": "recovered",
+        "reason": null
+      }
+    ]
+  },
+  {
+    "class": "AdminCtx",
+    "method_total": 10,
+    "fully_translated": 6,
+    "excluded": 4,
+    "details": [
+      {
+        "method": "Param",
+        "token": "0x06000006",
+        "rva": "0x00002058",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "ParamLong",
+        "token": "0x06000007",
+        "rva": "0x00002078",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "Query",
+        "token": "0x06000008",
+        "rva": "0x00002099",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "QueryInt",
+        "token": "0x06000009",
+        "rva": "0x000020A8",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "QueryLong",
+        "token": "0x0600000A",
+        "rva": "0x000020B8",
+        "status": "not-recovered",
+        "reason": "unsupported opcode ldloca.s"
+      },
+      {
+        "method": "BodyString",
+        "token": "0x0600000B",
+        "rva": "0x000020DE",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "BodyLong",
+        "token": "0x0600000C",
+        "rva": "0x000020ED",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "BodyInt",
+        "token": "0x0600000D",
+        "rva": "0x000020FC",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "BodyBool",
+        "token": "0x0600000E",
+        "rva": "0x0000210B",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": ".ctor",
+        "token": "0x0600000F",
+        "rva": "0x0000211A",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      }
+    ]
+  },
+  {
+    "class": "GameSession",
+    "method_total": 53,
+    "fully_translated": 25,
+    "excluded": 28,
+    "details": [
+      {
+        "method": "get_Server",
+        "token": "0x06000292",
+        "rva": "0x0001BAEB",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Server",
+        "token": "0x06000293",
+        "rva": "0x0001BAF2",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Net",
+        "token": "0x06000294",
+        "rva": "0x0001BAFA",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Net",
+        "token": "0x06000295",
+        "rva": "0x0001BB01",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_AccountId",
+        "token": "0x06000296",
+        "rva": "0x0001BB09",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_AccountId",
+        "token": "0x06000297",
+        "rva": "0x0001BB10",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_AccountName",
+        "token": "0x06000298",
+        "rva": "0x0001BB18",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_AccountName",
+        "token": "0x06000299",
+        "rva": "0x0001BB1F",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_World",
+        "token": "0x0600029A",
+        "rva": "0x0001BB27",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_World",
+        "token": "0x0600029B",
+        "rva": "0x0001BB2E",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Channel",
+        "token": "0x0600029C",
+        "rva": "0x0001BB36",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Channel",
+        "token": "0x0600029D",
+        "rva": "0x0001BB3D",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_CharacterId",
+        "token": "0x0600029E",
+        "rva": "0x0001BB45",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_CharacterId",
+        "token": "0x0600029F",
+        "rva": "0x0001BB4C",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_Character",
+        "token": "0x060002A0",
+        "rva": "0x0001BB54",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_Character",
+        "token": "0x060002A1",
+        "rva": "0x0001BB5B",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "get_InGame",
+        "token": "0x060002A2",
+        "rva": "0x0001BB63",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_InGame",
+        "token": "0x060002A3",
+        "rva": "0x0001BB6A",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "Boot",
+        "token": "0x060002A4",
+        "rva": "0x0001BB74",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "MigrateLegacyProfile",
+        "token": "0x060002A5",
+        "rva": "0x0001BEC8",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "Login",
+        "token": "0x060002A6",
+        "rva": "0x0001C0B0",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "get_AccountGender",
+        "token": "0x060002A7",
+        "rva": "0x0001C0F2",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "set_AccountGender",
+        "token": "0x060002A8",
+        "rva": "0x0001C0F9",
+        "status": "recovered-as-property",
+        "reason": null
+      },
+      {
+        "method": "SetGender",
+        "token": "0x060002A9",
+        "rva": "0x0001C104",
+        "status": "not-recovered",
+        "reason": "unsupported opcode bgt.s"
+      },
+      {
+        "method": "SetGender",
+        "token": "0x060002AA",
+        "rva": "0x0001C156",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "ServerList",
+        "token": "0x060002AB",
+        "rva": "0x0001C163",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "CharList",
+        "token": "0x060002AC",
+        "rva": "0x0001C180",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "PreviewAppearance",
+        "token": "0x060002AD",
+        "rva": "0x0001C25C",
+        "status": "not-recovered",
+        "reason": "external or generic call token 0x0A0003AC"
+      },
+      {
+        "method": "CheckCharName",
+        "token": "0x060002AE",
+        "rva": "0x0001C26E",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "NameFormatOk",
+        "token": "0x060002AF",
+        "rva": "0x0001C286",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "CreateChar",
+        "token": "0x060002B0",
+        "rva": "0x0001C28E",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "DeleteChar",
+        "token": "0x060002B1",
+        "rva": "0x0001C2B1",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      },
+      {
+        "method": "PlayerDead",
+        "token": "0x060002B2",
+        "rva": "0x0001C2DC",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "PeekRespawnMap",
+        "token": "0x060002B3",
+        "rva": "0x0001C354",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "Respawn",
+        "token": "0x060002B4",
+        "rva": "0x0001C37C",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "BeginSession",
+        "token": "0x060002B5",
+        "rva": "0x0001C45F",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "SelectChar",
+        "token": "0x060002B6",
+        "rva": "0x0001C47C",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "EnterMtsFromMenu",
+        "token": "0x060002B7",
+        "rva": "0x0001C5FC",
+        "status": "not-recovered",
+        "reason": "unsupported opcode isinst"
+      },
+      {
+        "method": "RefreshMatrixLevels",
+        "token": "0x060002B8",
+        "rva": "0x0001C684",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "DeselectChar",
+        "token": "0x060002B9",
+        "rva": "0x0001C78C",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "Logout",
+        "token": "0x060002BA",
+        "rva": "0x0001C858",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "MarkStatsDirty",
+        "token": "0x060002BB",
+        "rva": "0x0001C956",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "ReloadAfterCommand",
+        "token": "0x060002BC",
+        "rva": "0x0001C968",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brtrue.s"
+      },
+      {
+        "method": "ApplyToProfile",
+        "token": "0x060002BD",
+        "rva": "0x0001CACC",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "ApplyInventoryToProfile",
+        "token": "0x060002BE",
+        "rva": "0x0001CD40",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "ApplyGroundPickup",
+        "token": "0x060002BF",
+        "rva": "0x0001CF3C",
+        "status": "recovered",
+        "reason": null
+      },
+      {
+        "method": "ApplyTradeInventory",
+        "token": "0x060002C0",
+        "rva": "0x0001CF48",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "GrantTutorialAdmin",
+        "token": "0x060002C1",
+        "rva": "0x0001D00C",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "ApplyBotSkillEffect",
+        "token": "0x060002C2",
+        "rva": "0x0001D130",
+        "status": "not-recovered",
+        "reason": "unsupported opcode brfalse.s"
+      },
+      {
+        "method": "SaveToDb",
+        "token": "0x060002C3",
+        "rva": "0x0001D190",
+        "status": "not-recovered",
+        "reason": "too many instructions"
+      },
+      {
+        "method": "IsEquipSlot",
+        "token": "0x060002C4",
+        "rva": "0x0001D5E4",
+        "status": "not-recovered",
+        "reason": "external or generic call token 0x2B00002A"
+      },
+      {
+        "method": "HairFromId",
+        "token": "0x060002C5",
+        "rva": "0x0001D5F8",
+        "status": "not-recovered",
+        "reason": "unsupported opcode pop"
+      },
+      {
+        "method": ".cctor",
+        "token": "0x060002C6",
+        "rva": "0x0001D628",
+        "status": "not-recovered",
+        "reason": "unsupported opcode newobj"
+      }
+    ]
+  }
+]
