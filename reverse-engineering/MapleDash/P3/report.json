@@ -1,0 +1,2851 @@
+{
+  "assembly_sha256": "cfaa6d7f088a66259eb6a29c6e55dacfe2c6d3029c21d813daa7951d030c14a1",
+  "classes": [
+    {
+      "class_name": "InProcessTransport",
+      "checked": 55,
+      "newly_recovered": 4,
+      "already_in_p2": 30,
+      "skipped": 21,
+      "methods": [
+        {
+          "method": ".ctor",
+          "token": "0x0600143A",
+          "rva": "0x000DF44C",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "ScriptValue",
+          "token": "0x0600143B",
+          "rva": "0x000DF45B",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Script",
+          "token": "0x0600143C",
+          "rva": "0x000DF46E",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Social",
+          "token": "0x0600143D",
+          "rva": "0x000DF481",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "PartyGrind",
+          "token": "0x0600143E",
+          "rva": "0x000DF494",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "BotTrade",
+          "token": "0x0600143F",
+          "rva": "0x000DF4A7",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Market",
+          "token": "0x06001440",
+          "rva": "0x000DF4BF",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Community",
+          "token": "0x06001441",
+          "rva": "0x000DF4D7",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Boss",
+          "token": "0x06001442",
+          "rva": "0x000DF4EA",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "ChangeInventory",
+          "token": "0x06001443",
+          "rva": "0x000DF4FD",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "UpdateEquip",
+          "token": "0x06001444",
+          "rva": "0x000DF510",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "StarForce",
+          "token": "0x06001445",
+          "rva": "0x000DF524",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Potential",
+          "token": "0x06001446",
+          "rva": "0x000DF5D4",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "WeeklyGemstone",
+          "token": "0x06001447",
+          "rva": "0x000DF684",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "Symbol",
+          "token": "0x06001448",
+          "rva": "0x000DF6AC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "HyperStat",
+          "token": "0x06001449",
+          "rva": "0x000DF758",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "InnerAbility",
+          "token": "0x0600144A",
+          "rva": "0x000DF7C8",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Flame",
+          "token": "0x0600144B",
+          "rva": "0x000DF838",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Soul",
+          "token": "0x0600144C",
+          "rva": "0x000DF8E4",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "RefreshGrowthMirror",
+          "token": "0x0600144D",
+          "rva": "0x000DF990",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "RefreshEnhancementMirror",
+          "token": "0x0600144E",
+          "rva": "0x000DFA08",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "RemoveSlot",
+          "token": "0x0600144F",
+          "rva": "0x000DFA99",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "VMatrix",
+          "token": "0x06001450",
+          "rva": "0x000DFAAC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Hexa",
+          "token": "0x06001451",
+          "rva": "0x000DFB00",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "HexaConvert",
+          "token": "0x06001452",
+          "rva": "0x000DFB54",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "HasNpcShop",
+          "token": "0x06001453",
+          "rva": "0x000DFC34",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "NpcShop",
+          "token": "0x06001454",
+          "rva": "0x000DFC47",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Duey",
+          "token": "0x06001455",
+          "rva": "0x000DFC5A",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Merchant",
+          "token": "0x06001456",
+          "rva": "0x000DFC6D",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "PlayerShop",
+          "token": "0x06001457",
+          "rva": "0x000DFC80",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Maker",
+          "token": "0x06001458",
+          "rva": "0x000DFC93",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Ranking",
+          "token": "0x06001459",
+          "rva": "0x000DFCA6",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Owl",
+          "token": "0x0600145A",
+          "rva": "0x000DFCB9",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Storage",
+          "token": "0x0600145B",
+          "rva": "0x000DFCCC",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Macro",
+          "token": "0x0600145C",
+          "rva": "0x000DFCDF",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Report",
+          "token": "0x0600145D",
+          "rva": "0x000DFCF2",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Arena",
+          "token": "0x0600145E",
+          "rva": "0x000DFD05",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Rps",
+          "token": "0x0600145F",
+          "rva": "0x000DFD18",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Memo",
+          "token": "0x06001460",
+          "rva": "0x000DFD2B",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Tv",
+          "token": "0x06001461",
+          "rva": "0x000DFD3E",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Carnival",
+          "token": "0x06001462",
+          "rva": "0x000DFD51",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Cash",
+          "token": "0x06001463",
+          "rva": "0x000DFD64",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "EndSocialSession",
+          "token": "0x06001464",
+          "rva": "0x000DFD78",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "Login",
+          "token": "0x06001465",
+          "rva": "0x000DFE10",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "SetGender",
+          "token": "0x06001466",
+          "rva": "0x000DFE88",
+          "status": "skipped",
+          "reason": "unsupported opcode bne.un.s"
+        },
+        {
+          "method": "ServerList",
+          "token": "0x06001467",
+          "rva": "0x000DFEE6",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "CharList",
+          "token": "0x06001468",
+          "rva": "0x000DFF04",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "CheckCharName",
+          "token": "0x06001469",
+          "rva": "0x000DFF54",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "CreateChar",
+          "token": "0x0600146A",
+          "rva": "0x000DFFC4",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "DeleteChar",
+          "token": "0x0600146B",
+          "rva": "0x000E0074",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "CharSelect",
+          "token": "0x0600146C",
+          "rva": "0x000E00E8",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "ImportLegacy",
+          "token": "0x0600146D",
+          "rva": "0x000E0145",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "PlayerDead",
+          "token": "0x0600146E",
+          "rva": "0x000E0168",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "ChangeMap",
+          "token": "0x0600146F",
+          "rva": "0x000E0260",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "SaveCharacter",
+          "token": "0x06001470",
+          "rva": "0x000E04DC",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse"
+        }
+      ]
+    },
+    {
+      "class_name": "GameServer",
+      "checked": 37,
+      "newly_recovered": 1,
+      "already_in_p2": 1,
+      "skipped": 35,
+      "methods": [
+        {
+          "method": "get_Db",
+          "token": "0x060013BF",
+          "rva": "0x000DE8EB",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Db",
+          "token": "0x060013C0",
+          "rva": "0x000DE8F3",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Transport",
+          "token": "0x060013C1",
+          "rva": "0x000DE8FC",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Transport",
+          "token": "0x060013C2",
+          "rva": "0x000DE904",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_MapInfo",
+          "token": "0x060013C3",
+          "rva": "0x000DE90D",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_MapInfo",
+          "token": "0x060013C4",
+          "rva": "0x000DE915",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "add_TradeInventoryCommitted",
+          "token": "0x060013C5",
+          "rva": "0x000DE920",
+          "status": "skipped",
+          "reason": "unsupported opcode ldflda"
+        },
+        {
+          "method": "remove_TradeInventoryCommitted",
+          "token": "0x060013C6",
+          "rva": "0x000DE958",
+          "status": "skipped",
+          "reason": "unsupported opcode ldflda"
+        },
+        {
+          "method": "ActiveBotPlayer",
+          "token": "0x060013C7",
+          "rva": "0x000DE98D",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "get_Bots",
+          "token": "0x060013C8",
+          "rva": "0x000DE9A4",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_ScriptValues",
+          "token": "0x060013C9",
+          "rva": "0x000DEA02",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_ScriptValues",
+          "token": "0x060013CA",
+          "rva": "0x000DEA0A",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Scripts",
+          "token": "0x060013CB",
+          "rva": "0x000DEA13",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Scripts",
+          "token": "0x060013CC",
+          "rva": "0x000DEA1B",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Social",
+          "token": "0x060013CD",
+          "rva": "0x000DEA24",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Social",
+          "token": "0x060013CE",
+          "rva": "0x000DEA2C",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Community",
+          "token": "0x060013CF",
+          "rva": "0x000DEA35",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Community",
+          "token": "0x060013D0",
+          "rva": "0x000DEA3D",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Cash",
+          "token": "0x060013D1",
+          "rva": "0x000DEA46",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Cash",
+          "token": "0x060013D2",
+          "rva": "0x000DEA4E",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_NpcShops",
+          "token": "0x060013D3",
+          "rva": "0x000DEA57",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_NpcShops",
+          "token": "0x060013D4",
+          "rva": "0x000DEA5F",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Bosses",
+          "token": "0x060013D5",
+          "rva": "0x000DEA68",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Bosses",
+          "token": "0x060013D6",
+          "rva": "0x000DEA70",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Weather",
+          "token": "0x060013D7",
+          "rva": "0x000DEA79",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Weather",
+          "token": "0x060013D8",
+          "rva": "0x000DEA81",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Backdrops",
+          "token": "0x060013D9",
+          "rva": "0x000DEA8A",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Local",
+          "token": "0x060013DA",
+          "rva": "0x000DEA92",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Local",
+          "token": "0x060013DB",
+          "rva": "0x000DEA99",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "Start",
+          "token": "0x060013DC",
+          "rva": "0x000DEAA4",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "StartWith",
+          "token": "0x060013DD",
+          "rva": "0x000DECB0",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "Stop",
+          "token": "0x060013DE",
+          "rva": "0x000DEE42",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Save",
+          "token": "0x060013DF",
+          "rva": "0x000DEE75",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "EndBotSession",
+          "token": "0x060013E0",
+          "rva": "0x000DEE82",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "RouteBotChat",
+          "token": "0x060013E1",
+          "rva": "0x000DEE98",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": ".ctor",
+          "token": "0x060013E2",
+          "rva": "0x000DEEF7",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "<get_Bots>b__18_0",
+          "token": "0x060013E3",
+          "rva": "0x000DEF0A",
+          "status": "skipped",
+          "reason": "special method skipped"
+        }
+      ]
+    },
+    {
+      "class_name": "DbStore",
+      "checked": 34,
+      "newly_recovered": 6,
+      "already_in_p2": 0,
+      "skipped": 28,
+      "methods": [
+        {
+          "method": "get_FilePath",
+          "token": "0x060012F1",
+          "rva": "0x000D9F3E",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Dirty",
+          "token": "0x060012F2",
+          "rva": "0x000D9F46",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "Create",
+          "token": "0x060012F3",
+          "rva": "0x000D9F4E",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Open",
+          "token": "0x060012F4",
+          "rva": "0x000D9F68",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "LoadSchema",
+          "token": "0x060012F5",
+          "rva": "0x000D9FBC",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Parse",
+          "token": "0x060012F6",
+          "rva": "0x000D9FF0",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "StripTrailingComment",
+          "token": "0x060012F7",
+          "rva": "0x000DA0B4",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "ParseCreate",
+          "token": "0x060012F8",
+          "rva": "0x000DA118",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "ParseInsert",
+          "token": "0x060012F9",
+          "rva": "0x000DA4D0",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "SplitTuples",
+          "token": "0x060012FA",
+          "rva": "0x000DA660",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "Unquote",
+          "token": "0x060012FB",
+          "rva": "0x000DA6F0",
+          "status": "skipped",
+          "reason": "unsupported opcode blt.s"
+        },
+        {
+          "method": "ParseLong",
+          "token": "0x060012FC",
+          "rva": "0x000DA744",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "ParseDouble",
+          "token": "0x060012FD",
+          "rva": "0x000DA768",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "SplitTop",
+          "token": "0x060012FE",
+          "rva": "0x000DA794",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "Table",
+          "token": "0x060012FF",
+          "rva": "0x000DA850",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "HasTable",
+          "token": "0x06001300",
+          "rva": "0x000DA87F",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "get_TableNames",
+          "token": "0x06001301",
+          "rva": "0x000DA88D",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "BeginTransaction",
+          "token": "0x06001302",
+          "rva": "0x000DA89C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Commit",
+          "token": "0x06001303",
+          "rva": "0x000DAA00",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Rollback",
+          "token": "0x06001304",
+          "rva": "0x000DAA50",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "DeferSaves",
+          "token": "0x06001305",
+          "rva": "0x000DAB24",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Save",
+          "token": "0x06001306",
+          "rva": "0x000DAB3C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "WriteRow",
+          "token": "0x06001307",
+          "rva": "0x000DACB4",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "WriteValue",
+          "token": "0x06001308",
+          "rva": "0x000DAD58",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "Escape",
+          "token": "0x06001309",
+          "rva": "0x000DAE29",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "ReadJson",
+          "token": "0x0600130A",
+          "rva": "0x000DAE68",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "NowText",
+          "token": "0x0600130B",
+          "rva": "0x000DB058",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "Eq",
+          "token": "0x0600130C",
+          "rva": "0x000DB07C",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "GuessType",
+          "token": "0x0600130D",
+          "rva": "0x000DB09C",
+          "status": "skipped",
+          "reason": "isinst on value type: System.Int64"
+        },
+        {
+          "method": "Long",
+          "token": "0x0600130E",
+          "rva": "0x000DB0CC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Int",
+          "token": "0x0600130F",
+          "rva": "0x000DB114",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Dbl",
+          "token": "0x06001310",
+          "rva": "0x000DB120",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Str",
+          "token": "0x06001311",
+          "rva": "0x000DB168",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": ".ctor",
+          "token": "0x06001312",
+          "rva": "0x000DB19A",
+          "status": "recovered",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "class_name": "LoginService",
+      "checked": 5,
+      "newly_recovered": 1,
+      "already_in_p2": 1,
+      "skipped": 3,
+      "methods": [
+        {
+          "method": "IsNoPasswordAccount",
+          "token": "0x060013E5",
+          "rva": "0x000DEF2E",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Login",
+          "token": "0x060013E6",
+          "rva": "0x000DEF4C",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "SetGender",
+          "token": "0x060013E7",
+          "rva": "0x000DF0D0",
+          "status": "skipped",
+          "reason": "unsupported opcode beq.s"
+        },
+        {
+          "method": "IsTempBanned",
+          "token": "0x060013E8",
+          "rva": "0x000DF104",
+          "status": "skipped",
+          "reason": "unsupported opcode stind.ref"
+        },
+        {
+          "method": "Logout",
+          "token": "0x060013E9",
+          "rva": "0x000DF146",
+          "status": "already-in-P2",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "class_name": "WorldService",
+      "checked": 3,
+      "newly_recovered": 0,
+      "already_in_p2": 1,
+      "skipped": 2,
+      "methods": [
+        {
+          "method": "Worlds",
+          "token": "0x060018DD",
+          "rva": "0x0011ABA4",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Channels",
+          "token": "0x060018DE",
+          "rva": "0x0011AE18",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "ChannelLoad",
+          "token": "0x060018DF",
+          "rva": "0x0011AEAE",
+          "status": "already-in-P2",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "class_name": "AdminCtx",
+      "checked": 10,
+      "newly_recovered": 1,
+      "already_in_p2": 6,
+      "skipped": 3,
+      "methods": [
+        {
+          "method": "Param",
+          "token": "0x06000006",
+          "rva": "0x00002058",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "ParamLong",
+          "token": "0x06000007",
+          "rva": "0x00002078",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "Query",
+          "token": "0x06000008",
+          "rva": "0x00002099",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "QueryInt",
+          "token": "0x06000009",
+          "rva": "0x000020A8",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "QueryLong",
+          "token": "0x0600000A",
+          "rva": "0x000020B8",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "BodyString",
+          "token": "0x0600000B",
+          "rva": "0x000020DE",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "BodyLong",
+          "token": "0x0600000C",
+          "rva": "0x000020ED",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "BodyInt",
+          "token": "0x0600000D",
+          "rva": "0x000020FC",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "BodyBool",
+          "token": "0x0600000E",
+          "rva": "0x0000210B",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": ".ctor",
+          "token": "0x0600000F",
+          "rva": "0x0000211A",
+          "status": "recovered",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "class_name": "GameSession",
+      "checked": 53,
+      "newly_recovered": 4,
+      "already_in_p2": 5,
+      "skipped": 44,
+      "methods": [
+        {
+          "method": "get_Server",
+          "token": "0x06000292",
+          "rva": "0x0001BAEB",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Server",
+          "token": "0x06000293",
+          "rva": "0x0001BAF2",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Net",
+          "token": "0x06000294",
+          "rva": "0x0001BAFA",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Net",
+          "token": "0x06000295",
+          "rva": "0x0001BB01",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_AccountId",
+          "token": "0x06000296",
+          "rva": "0x0001BB09",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_AccountId",
+          "token": "0x06000297",
+          "rva": "0x0001BB10",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_AccountName",
+          "token": "0x06000298",
+          "rva": "0x0001BB18",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_AccountName",
+          "token": "0x06000299",
+          "rva": "0x0001BB1F",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_World",
+          "token": "0x0600029A",
+          "rva": "0x0001BB27",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_World",
+          "token": "0x0600029B",
+          "rva": "0x0001BB2E",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Channel",
+          "token": "0x0600029C",
+          "rva": "0x0001BB36",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Channel",
+          "token": "0x0600029D",
+          "rva": "0x0001BB3D",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_CharacterId",
+          "token": "0x0600029E",
+          "rva": "0x0001BB45",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_CharacterId",
+          "token": "0x0600029F",
+          "rva": "0x0001BB4C",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Character",
+          "token": "0x060002A0",
+          "rva": "0x0001BB54",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Character",
+          "token": "0x060002A1",
+          "rva": "0x0001BB5B",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_InGame",
+          "token": "0x060002A2",
+          "rva": "0x0001BB63",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_InGame",
+          "token": "0x060002A3",
+          "rva": "0x0001BB6A",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "Boot",
+          "token": "0x060002A4",
+          "rva": "0x0001BB74",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "MigrateLegacyProfile",
+          "token": "0x060002A5",
+          "rva": "0x0001BEC8",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Login",
+          "token": "0x060002A6",
+          "rva": "0x0001C0B0",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "get_AccountGender",
+          "token": "0x060002A7",
+          "rva": "0x0001C0F2",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_AccountGender",
+          "token": "0x060002A8",
+          "rva": "0x0001C0F9",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "SetGender",
+          "token": "0x060002A9",
+          "rva": "0x0001C104",
+          "status": "skipped",
+          "reason": "unsupported opcode bgt.s"
+        },
+        {
+          "method": "SetGender",
+          "token": "0x060002AA",
+          "rva": "0x0001C156",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "ServerList",
+          "token": "0x060002AB",
+          "rva": "0x0001C163",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "CharList",
+          "token": "0x060002AC",
+          "rva": "0x0001C180",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "PreviewAppearance",
+          "token": "0x060002AD",
+          "rva": "0x0001C25C",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "CheckCharName",
+          "token": "0x060002AE",
+          "rva": "0x0001C26E",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "NameFormatOk",
+          "token": "0x060002AF",
+          "rva": "0x0001C286",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "CreateChar",
+          "token": "0x060002B0",
+          "rva": "0x0001C28E",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "DeleteChar",
+          "token": "0x060002B1",
+          "rva": "0x0001C2B1",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "PlayerDead",
+          "token": "0x060002B2",
+          "rva": "0x0001C2DC",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "PeekRespawnMap",
+          "token": "0x060002B3",
+          "rva": "0x0001C354",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Respawn",
+          "token": "0x060002B4",
+          "rva": "0x0001C37C",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "BeginSession",
+          "token": "0x060002B5",
+          "rva": "0x0001C45F",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "SelectChar",
+          "token": "0x060002B6",
+          "rva": "0x0001C47C",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "EnterMtsFromMenu",
+          "token": "0x060002B7",
+          "rva": "0x0001C5FC",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "RefreshMatrixLevels",
+          "token": "0x060002B8",
+          "rva": "0x0001C684",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "DeselectChar",
+          "token": "0x060002B9",
+          "rva": "0x0001C78C",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Logout",
+          "token": "0x060002BA",
+          "rva": "0x0001C858",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "MarkStatsDirty",
+          "token": "0x060002BB",
+          "rva": "0x0001C956",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "ReloadAfterCommand",
+          "token": "0x060002BC",
+          "rva": "0x0001C968",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "ApplyToProfile",
+          "token": "0x060002BD",
+          "rva": "0x0001CACC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "ApplyInventoryToProfile",
+          "token": "0x060002BE",
+          "rva": "0x0001CD40",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "ApplyGroundPickup",
+          "token": "0x060002BF",
+          "rva": "0x0001CF3C",
+          "status": "already-in-P2",
+          "reason": null
+        },
+        {
+          "method": "ApplyTradeInventory",
+          "token": "0x060002C0",
+          "rva": "0x0001CF48",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "GrantTutorialAdmin",
+          "token": "0x060002C1",
+          "rva": "0x0001D00C",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "ApplyBotSkillEffect",
+          "token": "0x060002C2",
+          "rva": "0x0001D130",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "SaveToDb",
+          "token": "0x060002C3",
+          "rva": "0x0001D190",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "IsEquipSlot",
+          "token": "0x060002C4",
+          "rva": "0x0001D5E4",
+          "status": "skipped",
+          "reason": "unsupported call token 0x2b00002a"
+        },
+        {
+          "method": "HairFromId",
+          "token": "0x060002C5",
+          "rva": "0x0001D5F8",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": ".cctor",
+          "token": "0x060002C6",
+          "rva": "0x0001D628",
+          "status": "skipped",
+          "reason": "special method skipped"
+        }
+      ]
+    },
+    {
+      "class_name": "AdminApi",
+      "checked": 12,
+      "newly_recovered": 6,
+      "already_in_p2": 0,
+      "skipped": 6,
+      "methods": [
+        {
+          "method": "Get",
+          "token": "0x06000010",
+          "rva": "0x00002132",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Post",
+          "token": "0x06000011",
+          "rva": "0x00002142",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Put",
+          "token": "0x06000012",
+          "rva": "0x00002152",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Delete",
+          "token": "0x06000013",
+          "rva": "0x00002162",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Add",
+          "token": "0x06000014",
+          "rva": "0x00002174",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "CreateSession",
+          "token": "0x06000015",
+          "rva": "0x000021C0",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "DropSession",
+          "token": "0x06000016",
+          "rva": "0x00002264",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Resolve",
+          "token": "0x06000017",
+          "rva": "0x000022B4",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "TokenOf",
+          "token": "0x06000018",
+          "rva": "0x00002354",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Handle",
+          "token": "0x06000019",
+          "rva": "0x00002398",
+          "status": "skipped",
+          "reason": "complex method >350 IL instructions"
+        },
+        {
+          "method": "LooksLikeApi",
+          "token": "0x0600001A",
+          "rva": "0x000028A4",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": ".ctor",
+          "token": "0x0600001B",
+          "rva": "0x000028E0",
+          "status": "recovered",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "class_name": "AdminBackend",
+      "checked": 47,
+      "newly_recovered": 1,
+      "already_in_p2": 0,
+      "skipped": 46,
+      "methods": [
+        {
+          "method": "get_Ready",
+          "token": "0x06000026",
+          "rva": "0x00002DC6",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Db",
+          "token": "0x06000027",
+          "rva": "0x00002DD0",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Version",
+          "token": "0x06000028",
+          "rva": "0x00002DEF",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "UnityEngineVersion",
+          "token": "0x06000029",
+          "rva": "0x00002E00",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Camel",
+          "token": "0x0600002A",
+          "rva": "0x00002E08",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "ToDto",
+          "token": "0x0600002B",
+          "rva": "0x00002E7C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "EnsureWebAdmin",
+          "token": "0x0600002C",
+          "rva": "0x00002EFC",
+          "status": "skipped",
+          "reason": "invalid identifier: <>9__16_0"
+        },
+        {
+          "method": "Authenticate",
+          "token": "0x0600002D",
+          "rva": "0x00002F27",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "AccountInfo",
+          "token": "0x0600002E",
+          "rva": "0x00002F51",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "AccountPage",
+          "token": "0x0600002F",
+          "rva": "0x00002F74",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "InRange",
+          "token": "0x06000030",
+          "rva": "0x00002FD8",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "CharacterMaps",
+          "token": "0x06000031",
+          "rva": "0x00003064",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "MapName",
+          "token": "0x06000032",
+          "rva": "0x00003087",
+          "status": "skipped",
+          "reason": "unsupported opcode ble.s"
+        },
+        {
+          "method": "AddAccount",
+          "token": "0x06000033",
+          "rva": "0x000030A0",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "UpdateAccount",
+          "token": "0x06000034",
+          "rva": "0x000030D8",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "Copy",
+          "token": "0x06000035",
+          "rva": "0x00003104",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "DeleteAccount",
+          "token": "0x06000036",
+          "rva": "0x00003153",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "DeleteCharacterRows",
+          "token": "0x06000037",
+          "rva": "0x00003178",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "BanAccount",
+          "token": "0x06000038",
+          "rva": "0x000032A8",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "UnbanAccount",
+          "token": "0x06000039",
+          "rva": "0x000032D2",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "ResetLoggedIn",
+          "token": "0x0600003A",
+          "rva": "0x000032F5",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "MoveAccountToHenesys",
+          "token": "0x0600003B",
+          "rva": "0x00003318",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "OnlineCharacterPage",
+          "token": "0x0600003C",
+          "rva": "0x0000333B",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "SafeJobName",
+          "token": "0x0600003D",
+          "rva": "0x0000337C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "MoveCharacterToHenesys",
+          "token": "0x0600003E",
+          "rva": "0x000033B4",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "MoveCharactersToHenesys",
+          "token": "0x0600003F",
+          "rva": "0x000033D7",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "ChangeCharacterName",
+          "token": "0x06000040",
+          "rva": "0x00003401",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "InventoryTypes",
+          "token": "0x06000041",
+          "rva": "0x0000342C",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "InventoryCharacterPage",
+          "token": "0x06000042",
+          "rva": "0x000034AF",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "InventoryPage",
+          "token": "0x06000043",
+          "rva": "0x000034EF",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "InventoryDto",
+          "token": "0x06000044",
+          "rva": "0x00003530",
+          "status": "skipped",
+          "reason": "complex method >350 IL instructions"
+        },
+        {
+          "method": "UpdateInventory",
+          "token": "0x06000045",
+          "rva": "0x000039D9",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "DeleteInventory",
+          "token": "0x06000046",
+          "rva": "0x000039FC",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "ConfigTypeList",
+          "token": "0x06000047",
+          "rva": "0x00003A1F",
+          "status": "skipped",
+          "reason": "invalid identifier: <>9__43_0"
+        },
+        {
+          "method": "ConfigPage",
+          "token": "0x06000048",
+          "rva": "0x00003A4A",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "AddConfig",
+          "token": "0x06000049",
+          "rva": "0x00003A8A",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "UpdateConfig",
+          "token": "0x0600004A",
+          "rva": "0x00003AAD",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "DeleteConfig",
+          "token": "0x0600004B",
+          "rva": "0x00003AD0",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "DeleteConfigList",
+          "token": "0x0600004C",
+          "rva": "0x00003AF3",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "RequireDb",
+          "token": "0x0600004D",
+          "rva": "0x00003B16",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "Live",
+          "token": "0x0600004E",
+          "rva": "0x00003B2C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "LiveWarp",
+          "token": "0x0600004F",
+          "rva": "0x00003B6C",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "LiveWarpTo",
+          "token": "0x06000050",
+          "rva": "0x00003B8A",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "LiveRename",
+          "token": "0x06000051",
+          "rva": "0x00003BAF",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "LiveInventory",
+          "token": "0x06000052",
+          "rva": "0x00003BD4",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "LiveKick",
+          "token": "0x06000053",
+          "rva": "0x00003C07",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "CurrentCharId",
+          "token": "0x06000054",
+          "rva": "0x00003C2C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        }
+      ]
+    },
+    {
+      "class_name": "AdminHttpServer",
+      "checked": 16,
+      "newly_recovered": 1,
+      "already_in_p2": 0,
+      "skipped": 15,
+      "methods": [
+        {
+          "method": "get_Port",
+          "token": "0x06000105",
+          "rva": "0x0000C0ED",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "set_Port",
+          "token": "0x06000106",
+          "rva": "0x0000C0F5",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Running",
+          "token": "0x06000107",
+          "rva": "0x0000C0FE",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": ".ctor",
+          "token": "0x06000108",
+          "rva": "0x0000C108",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "StartOn",
+          "token": "0x06000109",
+          "rva": "0x0000C128",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Start",
+          "token": "0x0600010A",
+          "rva": "0x0000C1B8",
+          "status": "skipped",
+          "reason": "prefix volatile."
+        },
+        {
+          "method": "AcceptLoop",
+          "token": "0x0600010B",
+          "rva": "0x0000C290",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "HandleClient",
+          "token": "0x0600010C",
+          "rva": "0x0000C300",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "ReadRequest",
+          "token": "0x0600010D",
+          "rva": "0x0000C454",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "ReadHead",
+          "token": "0x0600010E",
+          "rva": "0x0000C674",
+          "status": "skipped",
+          "reason": "unsupported opcode stind.ref"
+        },
+        {
+          "method": "FindHeadEnd",
+          "token": "0x0600010F",
+          "rva": "0x0000C73C",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "DecodePath",
+          "token": "0x06000110",
+          "rva": "0x0000C794",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "ParseQuery",
+          "token": "0x06000111",
+          "rva": "0x0000C7D0",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "WriteResponse",
+          "token": "0x06000112",
+          "rva": "0x0000C88C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "StatusText",
+          "token": "0x06000113",
+          "rva": "0x0000CA2C",
+          "status": "skipped",
+          "reason": "unsupported opcode bgt.s"
+        },
+        {
+          "method": "Dispose",
+          "token": "0x06000114",
+          "rva": "0x0000CB38",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        }
+      ]
+    },
+    {
+      "class_name": "AdminHttpRequest",
+      "checked": 4,
+      "newly_recovered": 0,
+      "already_in_p2": 0,
+      "skipped": 4,
+      "methods": [
+        {
+          "method": "Header",
+          "token": "0x060000FD",
+          "rva": "0x0000BF4C",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "QueryValue",
+          "token": "0x060000FE",
+          "rva": "0x0000BF6C",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "QueryInt",
+          "token": "0x060000FF",
+          "rva": "0x0000BF8C",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": ".ctor",
+          "token": "0x06000100",
+          "rva": "0x0000BFBC",
+          "status": "skipped",
+          "reason": "unsupported call token 0x2b000001"
+        }
+      ]
+    },
+    {
+      "class_name": "AdminHttpResponse",
+      "checked": 4,
+      "newly_recovered": 2,
+      "already_in_p2": 0,
+      "skipped": 2,
+      "methods": [
+        {
+          "method": "Json",
+          "token": "0x06000101",
+          "rva": "0x0000C031",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Text",
+          "token": "0x06000102",
+          "rva": "0x0000C060",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Bytes",
+          "token": "0x06000103",
+          "rva": "0x0000C08F",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": ".ctor",
+          "token": "0x06000104",
+          "rva": "0x0000C0B4",
+          "status": "skipped",
+          "reason": "unsupported call token 0x2b000001"
+        }
+      ]
+    },
+    {
+      "class_name": "AdminDbUtil",
+      "checked": 5,
+      "newly_recovered": 1,
+      "already_in_p2": 0,
+      "skipped": 4,
+      "methods": [
+        {
+          "method": "Page",
+          "token": "0x060000BD",
+          "rva": "0x00009D78",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Page",
+          "token": "0x060000BE",
+          "rva": "0x00009E68",
+          "status": "skipped",
+          "reason": "unsupported opcode ble.s"
+        },
+        {
+          "method": "NextId",
+          "token": "0x060000BF",
+          "rva": "0x00009EBC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Set",
+          "token": "0x060000C0",
+          "rva": "0x00009F2C",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "Text",
+          "token": "0x060000C1",
+          "rva": "0x00009FF5",
+          "status": "recovered",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "class_name": "AccountsDao",
+      "checked": 13,
+      "newly_recovered": 5,
+      "already_in_p2": 0,
+      "skipped": 8,
+      "methods": [
+        {
+          "method": "HashPassword",
+          "token": "0x060012BA",
+          "rva": "0x000D82BC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "VerifyPassword",
+          "token": "0x060012BB",
+          "rva": "0x000D8350",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Pbkdf2",
+          "token": "0x060012BC",
+          "rva": "0x000D83BC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "FixedTimeEquals",
+          "token": "0x060012BD",
+          "rva": "0x000D83FC",
+          "status": "skipped",
+          "reason": "unsupported opcode beq.s"
+        },
+        {
+          "method": "FindByName",
+          "token": "0x060012BE",
+          "rva": "0x000D8431",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "FindById",
+          "token": "0x060012BF",
+          "rva": "0x000D844E",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "AutoRegister",
+          "token": "0x060012C0",
+          "rva": "0x000D8474",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "DefaultGmLevel",
+          "token": "0x060012C1",
+          "rva": "0x000D84C6",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "Count",
+          "token": "0x060012C2",
+          "rva": "0x000D84EE",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "UpdateLoginState",
+          "token": "0x060012C3",
+          "rva": "0x000D8508",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "CharacterSlots",
+          "token": "0x060012C4",
+          "rva": "0x000D8568",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Gender",
+          "token": "0x060012C5",
+          "rva": "0x000D8593",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "SetGender",
+          "token": "0x060012C6",
+          "rva": "0x000D85A8",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        }
+      ]
+    },
+    {
+      "class_name": "CharactersDao",
+      "checked": 7,
+      "newly_recovered": 4,
+      "already_in_p2": 0,
+      "skipped": 3,
+      "methods": [
+        {
+          "method": "ByAccount",
+          "token": "0x060012B3",
+          "rva": "0x000D7F7C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "FindById",
+          "token": "0x060012B4",
+          "rva": "0x000D8044",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "NameTaken",
+          "token": "0x060012B5",
+          "rva": "0x000D809D",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Insert",
+          "token": "0x060012B6",
+          "rva": "0x000D80BD",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Save",
+          "token": "0x060012B7",
+          "rva": "0x000D80D5",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Delete",
+          "token": "0x060012B8",
+          "rva": "0x000D8104",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": "CanCreateChar",
+          "token": "0x060012B9",
+          "rva": "0x000D82B2",
+          "status": "recovered",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "class_name": "AdminAccount",
+      "checked": 1,
+      "newly_recovered": 1,
+      "already_in_p2": 0,
+      "skipped": 0,
+      "methods": [
+        {
+          "method": ".ctor",
+          "token": "0x06000005",
+          "rva": "0x00002050",
+          "status": "recovered",
+          "reason": null
+        }
+      ]
+    },
+    {
+      "class_name": "AdminHost",
+      "checked": 18,
+      "newly_recovered": 3,
+      "already_in_p2": 0,
+      "skipped": 15,
+      "methods": [
+        {
+          "method": "get_Running",
+          "token": "0x060000EB",
+          "rva": "0x0000B898",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_Port",
+          "token": "0x060000EC",
+          "rva": "0x0000B8C4",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "get_BaseUrl",
+          "token": "0x060000ED",
+          "rva": "0x0000B8F4",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "Boot",
+          "token": "0x060000EE",
+          "rva": "0x0000B91D",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "Awake",
+          "token": "0x060000EF",
+          "rva": "0x0000B948",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "BackgroundPump",
+          "token": "0x060000F0",
+          "rva": "0x0000BAB8",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "OnApplicationFocus",
+          "token": "0x060000F1",
+          "rva": "0x0000BB06",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "OnApplicationPause",
+          "token": "0x060000F2",
+          "rva": "0x0000BB0F",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "SwitchForeground",
+          "token": "0x060000F3",
+          "rva": "0x0000BB1B",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "Update",
+          "token": "0x060000F4",
+          "rva": "0x0000BB3C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "OnDestroy",
+          "token": "0x060000F5",
+          "rva": "0x0000BBB0",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "OnApplicationQuit",
+          "token": "0x060000F6",
+          "rva": "0x0000BBDB",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "EnsureStarted",
+          "token": "0x060000F7",
+          "rva": "0x0000BBE8",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "OpenInBrowser",
+          "token": "0x060000F8",
+          "rva": "0x0000BC72",
+          "status": "skipped",
+          "reason": "dup of evaluated call expression"
+        },
+        {
+          "method": "StartServer",
+          "token": "0x060000F9",
+          "rva": "0x0000BC80",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "StopServer",
+          "token": "0x060000FA",
+          "rva": "0x0000BEE4",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "get_ServerForTest",
+          "token": "0x060000FB",
+          "rva": "0x0000BF20",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": ".ctor",
+          "token": "0x060000FC",
+          "rva": "0x0000BF3B",
+          "status": "skipped",
+          "reason": "prefix volatile."
+        }
+      ]
+    },
+    {
+      "class_name": "AdminJson",
+      "checked": 19,
+      "newly_recovered": 6,
+      "already_in_p2": 0,
+      "skipped": 13,
+      "methods": [
+        {
+          "method": "Write",
+          "token": "0x06000115",
+          "rva": "0x0000CB7C",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "WriteValue",
+          "token": "0x06000116",
+          "rva": "0x0000CB94",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "WriteDouble",
+          "token": "0x06000117",
+          "rva": "0x0000CE80",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "WriteString",
+          "token": "0x06000118",
+          "rva": "0x0000CF08",
+          "status": "skipped",
+          "reason": "unsupported opcode br"
+        },
+        {
+          "method": "Parse",
+          "token": "0x06000119",
+          "rva": "0x0000D01D",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "UnwrapSubmit",
+          "token": "0x0600011A",
+          "rva": "0x0000D030",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "AsDict",
+          "token": "0x0600011B",
+          "rva": "0x0000D080",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "AsList",
+          "token": "0x0600011C",
+          "rva": "0x0000D088",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "Get",
+          "token": "0x0600011D",
+          "rva": "0x0000D090",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "GetDict",
+          "token": "0x0600011E",
+          "rva": "0x0000D0B7",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "GetList",
+          "token": "0x0600011F",
+          "rva": "0x0000D0C5",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "GetString",
+          "token": "0x06000120",
+          "rva": "0x0000D0D4",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "GetLong",
+          "token": "0x06000121",
+          "rva": "0x0000D104",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "GetInt",
+          "token": "0x06000122",
+          "rva": "0x0000D185",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "GetBool",
+          "token": "0x06000123",
+          "rva": "0x0000D194",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "Ok",
+          "token": "0x06000124",
+          "rva": "0x0000D21C",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "Fail",
+          "token": "0x06000125",
+          "rva": "0x0000D280",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "Obj",
+          "token": "0x06000126",
+          "rva": "0x0000D2E4",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "Page",
+          "token": "0x06000127",
+          "rva": "0x0000D320",
+          "status": "skipped",
+          "reason": "unsupported opcode ble.s"
+        }
+      ]
+    },
+    {
+      "class_name": "AdminLive",
+      "checked": 8,
+      "newly_recovered": 1,
+      "already_in_p2": 0,
+      "skipped": 7,
+      "methods": [
+        {
+          "method": "IsCurrentCharacter",
+          "token": "0x06000128",
+          "rva": "0x0000D3A9",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "IsCurrentAccount",
+          "token": "0x06000129",
+          "rva": "0x0000D3C2",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "WarpToHenesys",
+          "token": "0x0600012A",
+          "rva": "0x0000D3DB",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": "WarpTo",
+          "token": "0x0600012B",
+          "rva": "0x0000D3EC",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "Rename",
+          "token": "0x0600012C",
+          "rva": "0x0000D471",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "SyncInventory",
+          "token": "0x0600012D",
+          "rva": "0x0000D4B0",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "ApplyProfileDelta",
+          "token": "0x0600012E",
+          "rva": "0x0000D5E1",
+          "status": "skipped",
+          "reason": "unsupported opcode ble.s"
+        },
+        {
+          "method": "KickAccount",
+          "token": "0x0600012F",
+          "rva": "0x0000D61C",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        }
+      ]
+    },
+    {
+      "class_name": "AdminMainThread",
+      "checked": 7,
+      "newly_recovered": 0,
+      "already_in_p2": 0,
+      "skipped": 7,
+      "methods": [
+        {
+          "method": "Post",
+          "token": "0x0600001F",
+          "rva": "0x00002B94",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Pump",
+          "token": "0x06000020",
+          "rva": "0x00002BDC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "AwaitIdle",
+          "token": "0x06000021",
+          "rva": "0x00002C84",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "get_OnMainThread",
+          "token": "0x06000022",
+          "rva": "0x00002CB6",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "Run",
+          "token": "0x06000023",
+          "rva": "0x00002CCC",
+          "status": "skipped",
+          "reason": "contains structured exception handling"
+        },
+        {
+          "method": "Run",
+          "token": "0x06000024",
+          "rva": "0x00002D88",
+          "status": "skipped",
+          "reason": "unsupported opcode ldftn"
+        },
+        {
+          "method": ".cctor",
+          "token": "0x06000025",
+          "rva": "0x00002DA8",
+          "status": "skipped",
+          "reason": "special method skipped"
+        }
+      ]
+    },
+    {
+      "class_name": "Server.Bot.BotWorkPump",
+      "checked": 4,
+      "newly_recovered": 1,
+      "already_in_p2": 0,
+      "skipped": 3,
+      "methods": [
+        {
+          "method": "BeginFrame",
+          "token": "0x06001E0C",
+          "rva": "0x00149DDC",
+          "status": "skipped",
+          "reason": "unsupported opcode ldloca.s"
+        },
+        {
+          "method": "get_FrameSpentMs",
+          "token": "0x06001E0D",
+          "rva": "0x00149E00",
+          "status": "skipped",
+          "reason": "property accessors omitted to avoid incomplete declarations"
+        },
+        {
+          "method": "Has",
+          "token": "0x06001E0E",
+          "rva": "0x00149E3F",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": ".cctor",
+          "token": "0x06001E0F",
+          "rva": "0x00149E54",
+          "status": "skipped",
+          "reason": "special method skipped"
+        }
+      ]
+    },
+    {
+      "class_name": "Server.Bot.BotAttack",
+      "checked": 12,
+      "newly_recovered": 0,
+      "already_in_p2": 0,
+      "skipped": 12,
+      "methods": [
+        {
+          "method": "ActionFor",
+          "token": "0x06001C80",
+          "rva": "0x0014045C",
+          "status": "skipped",
+          "reason": "unsupported opcode beq"
+        },
+        {
+          "method": "PoseFor",
+          "token": "0x06001C81",
+          "rva": "0x00140578",
+          "status": "skipped",
+          "reason": "unsupported opcode switch"
+        },
+        {
+          "method": "BasicSwing",
+          "token": "0x06001C82",
+          "rva": "0x00140648",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "LineDamage",
+          "token": "0x06001C83",
+          "rva": "0x00140698",
+          "status": "skipped",
+          "reason": "unsupported opcode ldtoken"
+        },
+        {
+          "method": "JobTier",
+          "token": "0x06001C84",
+          "rva": "0x00140750",
+          "status": "skipped",
+          "reason": "unsupported opcode brtrue.s"
+        },
+        {
+          "method": "Melee",
+          "token": "0x06001C85",
+          "rva": "0x001407D4",
+          "status": "skipped",
+          "reason": "unsupported opcode blt.s"
+        },
+        {
+          "method": "Supports",
+          "token": "0x06001C86",
+          "rva": "0x00140848",
+          "status": "skipped",
+          "reason": "unsupported opcode ble.s"
+        },
+        {
+          "method": "GrindSkill",
+          "token": "0x06001C87",
+          "rva": "0x001409F0",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "SplitDamage",
+          "token": "0x06001C88",
+          "rva": "0x00140BA0",
+          "status": "skipped",
+          "reason": "unsupported opcode br.s"
+        },
+        {
+          "method": "EngageRange",
+          "token": "0x06001C89",
+          "rva": "0x00140BFD",
+          "status": "skipped",
+          "reason": "unsupported opcode brfalse.s"
+        },
+        {
+          "method": "IsA",
+          "token": "0x06001C8A",
+          "rva": "0x00140C23",
+          "status": "skipped",
+          "reason": "unsupported opcode bne.un.s"
+        },
+        {
+          "method": "Preferred",
+          "token": "0x06001C8B",
+          "rva": "0x00140C4C",
+          "status": "skipped",
+          "reason": "complex method >350 IL instructions"
+        }
+      ]
+    },
+    {
+      "class_name": "Server.Bot.BotActor",
+      "checked": 3,
+      "newly_recovered": 2,
+      "already_in_p2": 0,
+      "skipped": 1,
+      "methods": [
+        {
+          "method": "MarkMapEntry",
+          "token": "0x06001C5C",
+          "rva": "0x0013F9CF",
+          "status": "skipped",
+          "reason": "dup of evaluated call expression"
+        },
+        {
+          "method": "IsBot",
+          "token": "0x06001C5D",
+          "rva": "0x0013F9E5",
+          "status": "recovered",
+          "reason": null
+        },
+        {
+          "method": ".ctor",
+          "token": "0x06001C5E",
+          "rva": "0x0013F9E8",
+          "status": "recovered",
+          "reason": null
+        }
+      ]
+    }
+  ]
+}
