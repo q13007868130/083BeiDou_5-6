@@ -162,7 +162,13 @@ public sealed class WorldHub
         do
         {
             result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), ct);
-            if (result.MessageType == WebSocketMessageType.Close) return null;
+            if (result.MessageType == WebSocketMessageType.Close)
+            {
+                if (socket.State == WebSocketState.CloseReceived)
+                    await socket.CloseOutputAsync(result.CloseStatus ?? WebSocketCloseStatus.NormalClosure,
+                                                  result.CloseStatusDescription, CancellationToken.None);
+                return null;
+            }
             if (result.MessageType != WebSocketMessageType.Text || content.Length + result.Count > 4096)
             {
                 await socket.CloseAsync(WebSocketCloseStatus.MessageTooBig, "message_too_large", CancellationToken.None);
