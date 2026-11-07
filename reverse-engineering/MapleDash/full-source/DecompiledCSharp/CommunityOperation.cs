@@ -1,0 +1,26 @@
+public enum CommunityOperation
+{
+	Read,
+	CreateGuild,
+	ConfirmGuild,
+	InviteGuild,
+	AcceptGuild,
+	LeaveGuild,
+	DisbandGuild,
+	ExpelGuild,
+	GuildRank,
+	GuildTitles,
+	GuildNotice,
+	GuildEmblem,
+	ExpandGuild,
+	InviteFamily,
+	AcceptFamily,
+	SeparateFamily,
+	FamilyPrecepts,
+	UseFamily,
+	SetBoard,
+	CloseBoard,
+	AnswerSummon,
+	RecordKill,
+	ReadFamilyTree
+}

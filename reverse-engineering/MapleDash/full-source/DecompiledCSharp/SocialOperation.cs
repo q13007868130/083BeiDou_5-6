@@ -1,0 +1,26 @@
+public enum SocialOperation
+{
+	Read,
+	AddBuddy,
+	AcceptBuddy,
+	DeleteBuddy,
+	CreateParty,
+	LeaveParty,
+	InviteParty,
+	SearchParty,
+	StopSearch,
+	OpenMessenger,
+	CloseMessenger,
+	InviteMessenger,
+	SendChat,
+	AddMonsterCard,
+	SetBookCover,
+	AcceptMessenger,
+	DeclineMessenger,
+	AcceptParty,
+	DeclineParty,
+	ExpelParty,
+	ChangePartyLeader,
+	SetBuddyCapacity,
+	CharacterInfo
+}

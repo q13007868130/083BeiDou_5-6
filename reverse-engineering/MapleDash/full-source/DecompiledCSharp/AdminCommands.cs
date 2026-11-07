@@ -1,0 +1,205 @@
+using System;
+using System.Collections.Generic;
+
+public static class AdminCommands
+{
+	public static Action ReloadScripts;
+
+	public static Action ReloadMaps;
+
+	private const string Seed = "\nhelp|HelpCommand|0\ncommands|HelpCommand|0\ndroplimit|DropLimitCommand|0\ntime|TimeCommand|0\ncredits|StaffCommand|0\nuptime|UptimeCommand|0\ngacha|GachaCommand|0\ndispose|DisposeCommand|0\nchangel|ChangeLanguageCommand|0\nequiplv|EquipLvCommand|0\nshowrates|ShowRatesCommand|0\nrates|RatesCommand|0\nonline|OnlineCommand|0\ngm|GmCommand|0\nreportbug|ReportBugCommand|0\npoints|ReadPointsCommand|0\njoinevent|JoinEventCommand|0\nleaveevent|LeaveEventCommand|0\nranks|RanksCommand|0\nstr|StatStrCommand|0\ndex|StatDexCommand|0\nint|StatIntCommand|0\nluk|StatLukCommand|0\nenableauth|EnableAuthCommand|0\ntoggleexp|ToggleExpCommand|0\nmylawn|MapOwnerClaimCommand|0\nbosshp|BossHpCommand|1\nmobhp|MobHpCommand|1\nwhatdropsfrom|WhatDropsFromCommand|1\nwhodrops|WhoDropsCommand|1\nbuffme|BuffMeCommand|1\ngoto|GotoCommand|1\nrecharge|RechargeCommand|2\nwhereami|WhereaMiCommand|2\nhide|HideCommand|2\nunhide|UnHideCommand|2\nsp|SpCommand|2\nap|ApCommand|2\nempowerme|EmpowerMeCommand|2\nbuffmap|BuffMapCommand|2\nbuff|BuffCommand|2\nbomb|BombCommand|2\ndc|DcCommand|2\ncleardrops|ClearDropsCommand|2\nclearslot|ClearSlotCommand|2\nclearsavelocs|ClearSavedLocationsCommand|2\nwarp|WarpCommand|2\nwarphere|SummonCommand|2\nsummon|SummonCommand|2\nwarpto|ReachCommand|2\nreach|ReachCommand|2\nfollow|ReachCommand|2\ngmshop|GmShopCommand|2\nheal|HealCommand|2\nitem|ItemCommand|2\ndrop|ItemDropCommand|2\nlevel|LevelCommand|2\nlevelpro|LevelProCommand|2\nsetslot|SetSlotCommand|2\nsetstat|SetStatCommand|2\nmaxstat|MaxStatCommand|2\nmaxskill|MaxSkillCommand|2\nresetskill|ResetSkillCommand|2\nsearch|SearchCommand|2\njail|JailCommand|2\nunjail|UnJailCommand|2\njob|JobCommand|2\nunbug|UnBugCommand|2\nid|IdCommand|2\ngachalist|GachaListCommand|2\nloot|LootCommand|2\nmobskill|MobSkillCommand|2\nwarpmap|WarpMapCommand|2\nwarparea|WarpAreaCommand|2\ndebuff|DebuffCommand|3\nfly|FlyCommand|3\nspawn|SpawnCommand|3\nmutemap|MuteMapCommand|3\ncheckdmg|CheckDmgCommand|3\ninmap|InMapCommand|3\nreloadevents|ReloadEventsCommand|3\nreloaddrops|ReloadDropsCommand|3\nreloadportals|ReloadPortalsCommand|3\nreloadmap|ReloadMapCommand|3\nreloadshops|ReloadShopsCommand|3\nhpmp|HpMpCommand|3\nmaxhpmp|MaxHpMpCommand|3\nmusic|MusicCommand|3\nmonitor|MonitorCommand|3\nmonitors|MonitorsCommand|3\nignore|IgnoreCommand|3\nignored|IgnoredCommand|3\npos|PosCommand|3\ntogglecoupon|ToggleCouponCommand|3\ntogglewhitechat|ChatCommand|3\nfame|FameCommand|3\ngivenx|GiveNxCommand|3\ngivevp|GiveVpCommand|3\ngivems|GiveMesosCommand|3\ngiverp|GiveRpCommand|3\nexpeds|ExpedsCommand|3\nkill|KillCommand|3\nseed|SeedCommand|3\nmaxenergy|MaxEnergyCommand|3\nkillall|KillAllCommand|3\nnotice|NoticeCommand|3\nrip|RipCommand|3\nopenportal|OpenPortalCommand|3\ncloseportal|ClosePortalCommand|3\npe|PeCommand|3\nstartevent|StartEventCommand|3\nendevent|EndEventCommand|3\nstartmapevent|StartMapEventCommand|3\nstopmapevent|StopMapEventCommand|3\nonline2|OnlineTwoCommand|3\nban|BanCommand|3\nunban|UnBanCommand|3\nhealmap|HealMapCommand|3\nhealperson|HealPersonCommand|3\nhurt|HurtCommand|3\nkillmap|KillMapCommand|3\nnight|NightCommand|3\nnpc|NpcCommand|3\nface|FaceCommand|3\nhair|HairCommand|3\nstartquest|QuestStartCommand|3\ncompletequest|QuestCompleteCommand|3\nresetquest|QuestResetCommand|3\ntimer|TimerCommand|3\ntimermap|TimerMapCommand|3\ntimerall|TimerAllCommand|3\nreloadhunt|ReloadHuntCommand|3\nservermessage|ServerMessageCommand|4\nproitem|ProItemCommand|4\nseteqstat|SetEqStatCommand|4\nexprate|ExpRateCommand|4\nmesorate|MesoRateCommand|4\ndroprate|DropRateCommand|4\nbossdroprate|BossDropRateCommand|4\nquestrate|QuestRateCommand|4\ntravelrate|TravelRateCommand|4\nfishrate|FishingRateCommand|4\nitemvac|ItemVacCommand|4\nforcevac|ForceVacCommand|4\nzakum|ZakumCommand|4\nhorntail|HorntailCommand|4\npinkbean|PinkbeanCommand|4\npap|PapCommand|4\npianus|PianusCommand|4\ncake|CakeCommand|4\nplayernpc|PlayerNpcCommand|4\nplayernpcremove|PlayerNpcRemoveCommand|4\npnpc|PnpcCommand|4\npnpcremove|PnpcRemoveCommand|4\npmob|PmobCommand|4\npmobremove|PmobRemoveCommand|4\nwarptolife|WarpToLifeCommand|4\nfishdrop|FishDropCommand|4\nbot|ArtificialPlayerCommand|4\nmove|BotMoveCommand|4\nenv|EnvironmentCommand|4\nbetafmshop|ArtificialFreeMarketCommand|4\nfmbot|FMBotCommand|4\ntradebot|TradeBotTestCommand|4\ntest|TestDevCommand|4\nopq|OPQCommands|4\nreactor|ReactorCommands|4\ndebug|DebugCommand|5\nset|SetCommand|5\nshowpackets|ShowPacketsCommand|5\nshowmovelife|ShowMoveLifeCommand|5\nshowsessions|ShowSessionsCommand|5\niplist|IpListCommand|5\nsetgmlevel|SetGmLevelCommand|6\nwarpworld|WarpWorldCommand|6\nsaveall|SaveAllCommand|6\ndcall|DCAllCommand|6\nmapplayers|MapPlayersCommand|6\ngetacc|GetAccCommand|6\nshutdown|ShutdownCommand|6\nclearquestcache|ClearQuestCacheCommand|6\nclearquest|ClearQuestCommand|6\nsupplyratecoupon|SupplyRateCouponCommand|6\nspawnallpnpcs|SpawnAllPNpcsCommand|6\neraseallpnpcs|EraseAllPNpcsCommand|6\naddchannel|ServerAddChannelCommand|6\naddworld|ServerAddWorldCommand|6\nremovechannel|ServerRemoveChannelCommand|6\nremoveworld|ServerRemoveWorldCommand|6\ndevtest|DevtestCommand|6\n扭蛋奖励|GachaCommand|0\n全部加力量|StatStrCommand|0\n全部加敏捷|StatDexCommand|0\n全部加智力|StatIntCommand|0\n全部加运气|StatLukCommand|0\n装备信息|EquipLvCommand|0\n倍率|ShowRatesCommand|0\njk|DisposeCommand|0\n解卡|DisposeCommand|0\n帮助|HelpCommand|0\nsymbol|OpenSymbolCommand|3\nhyperstat|OpenHyperStatCommand|3\ninnerability|OpenInnerAbilityCommand|3\nflame|OpenFlameCommand|3\nsoul|OpenSoulCommand|3\nvmatrix|OpenVMatrixCommand|3\nhexa|OpenHexaMatrixCommand|3\n符文徽章|OpenSymbolCommand|3\n极限属性|OpenHyperStatCommand|3\n内在能力|OpenInnerAbilityCommand|3\n轮回星火|OpenFlameCommand|3\n灵魂武器|OpenSoulCommand|3\nV矩阵|OpenVMatrixCommand|3\nHEXA矩阵|OpenHexaMatrixCommand|3";
+
+	private const string Descriptions = "\nChangeLanguageCommand|更改语言\nDisposeCommand|解卡npc对话\nDropLimitCommand|查看当前地图最大掉落数\nEnableAuthCommand|重置PIC或PIN验证冷却时间\nEquipLvCommand|展示装备等级\nGachaCommand|展示扭蛋机奖励\nGmCommand|给gm发送消息\nHelpCommand|展示可用的gm指令\nJoinEventCommand|参加当前的活动\nLeaveEventCommand|离开当前活动\nMapOwnerClaimCommand|开启地图归属\nOpenSymbolCommand|打开符文徽章窗（ARC/AUT）\nOpenHyperStatCommand|打开极限属性窗\nOpenInnerAbilityCommand|打开内在能力窗\nOpenFlameCommand|打开轮回星火页签\nOpenSoulCommand|打开灵魂武器页签\nOpenVMatrixCommand|打开V矩阵窗\nOpenHexaMatrixCommand|打开HEXA矩阵窗\nOnlineCommand|展示所有在线的玩家信息\nRanksCommand|展示玩家排名信息\nRatesCommand|展示玩家倍率\nReadPointsCommand|展示全部点数\nReportBugCommand|发送漏洞信息\nShowRatesCommand|展示大区和玩家倍率\nStaffCommand|展示服务端参与贡献的人员\nStatDexCommand|将属性点分配到敏捷\nStatIntCommand|将属性点分配到智力\nStatLukCommand|将属性点分配到运气\nStatStrCommand|将属性点分配到力量\nTimeCommand|展示当前服务器时间\nToggleExpCommand|开启或关闭经验获取\nUptimeCommand|展示当前服务器已运行时间\nBossHpCommand|展示当前地图的boss血量\nBuffMeCommand|激活GM buff\nGotoCommand|传送到预设地图\nMobHpCommand|展示当前地图的怪物血量\nWhatDropsFromCommand|查询怪物掉落\nWhoDropsCommand|查询物品掉落\nApCommand|设置属性点\nBombCommand|对玩家使用炸弹技能\nBuffCommand|激活指定buff\nBuffMapCommand|全图激活GM buff\nClearDropsCommand|清空当前玩家的掉落\nClearSavedLocationsCommand|清空玩家所有的存档点\nClearSlotCommand|清空当前玩家的指定背包栏\nDcCommand|强制玩家下线\nEmpowerMeCommand|激活所有可用的buff\nGachaListCommand|展示扭蛋机奖励\nGmShopCommand|打开GM商店\nHealCommand|血蓝加满\nHideCommand|隐身\nIdCommand|根据ID在手册中查询\nItemCommand|生成物品到背包\nItemDropCommand|生成物品到地上\nJailCommand|把某人关进监狱\nJobCommand|玩家转职\nLevelCommand|自定义等级，直接更改\nLevelProCommand|自定义等级，一级一级升\nLootCommand|展示您拥有的所有物品\nMaxSkillCommand|技能全满\nMaxStatCommand|状态全满\nMobSkillCommand|给当前地图的所有怪物应用指定技能\nReachCommand|传送到指定玩家的位置\nRechargeCommand|充值所有能够充值的消耗品\nResetSkillCommand|重置技能\nSearchCommand|全局搜索\nSetSlotCommand|设置所有背包格子数\nSetStatCommand|设置角色全部属性\nSpCommand|设置技能点\nSummonCommand|传送指定玩家到您的位置\nUnBugCommand|解卡动作\nUnHideCommand|取消隐身\nUnJailCommand|把某人从监狱中释放\nWarpAreaCommand|把当前地图附近的玩家传送到指定的地图\nWarpCommand|传送到指定地图\nWarpMapCommand|把当前地图的所有玩家传送到指定的地图\nWhereaMiCommand|展示当前地图信息\nBanCommand|封禁玩家\nChatCommand|开关GM聊天模式\nCheckDmgCommand|展示某个玩家的状态和伤害\nClosePortalCommand|关闭当前地图的传送点\nDebuffCommand|给附近玩家上debuff\nEndEventCommand|结束当前正在进行的活动\nExpedsCommand|展示所有正在进行的远征\nFaceCommand|改变玩家的脸型\nFameCommand|设置玩家人气\nFlyCommand|开启或关闭飞行模式\nGiveMesosCommand|给玩家发放金币\nGiveNxCommand|给玩家发放点券\nGiveRpCommand|给玩家发放奖励点数\nGiveVpCommand|给玩家发放投票点数\nHairCommand|改变玩家的发型\nHealMapCommand|回满全图血蓝\nHealPersonCommand|回满玩家血蓝\nHpMpCommand|设置玩家HP/MP\nHurtCommand|伤害玩家到1HP\nIgnoreCommand|添加或移除玩家的自动封禁白名单\nIgnoredCommand|展示所有自动封禁白名单玩家\nInMapCommand|展示当前地图的所有玩家\nKillAllCommand|击杀当前地图所有怪物\nKillCommand|击杀玩家\nKillMapCommand|击杀当前地图的所有玩家\nMaxEnergyCommand|道场能量条加满\nMaxHpMpCommand|设置玩家最大HP/MP\nMonitorCommand|开启或关闭监控某个玩家的发包\nMonitorsCommand|开启或关闭监控所有玩家的发包\nMusicCommand|在当前地图播放音乐\nMuteMapCommand|开启或关闭禁言\nNightCommand|将当前地图设置为夜晚\nNoticeCommand|发送全服公告\nNpcCommand|在当前的位置生成一个NPC\nOnlineTwoCommand|展示所有在线玩家\nOpenPortalCommand|开启当前地图的传送点\nPeCommand|从文件中读取发包内容模拟客户端发送\nPosCommand|展示玩家当前位置信息\nQuestCompleteCommand|完成一个任务\nQuestResetCommand|重置一个任务\nQuestStartCommand|开始一个任务\nReloadDropsCommand|重载掉落\nReloadEventsCommand|重载活动\nReloadHuntCommand|重新加载狩猎任务配置并重新发布任务\nReloadMapCommand|重载地图\nReloadPortalsCommand|重载传送点\nReloadShopsCommand|重载商店\nRipCommand|发送全服封禁公告\nSeedCommand|掉落所有的妙月种子\nSpawnCommand|在当前位置生成怪物\nStartEventCommand|在当前地图开启一个活动\nStartMapEventCommand|开启当前地图的官方活动，仅活动地图有效\nStopMapEventCommand|停止当前地图的官方活动，仅活动地图有效\nTimerAllCommand|给当前大区设置一个计时器\nTimerCommand|给玩家设置一个计时器\nTimerMapCommand|给当前地图设置一个计时器\nToggleCouponCommand|开启或关闭倍率卡\nUnBanCommand|解封玩家\nArtificialFreeMarketCommand|Artificial FM Test.\nArtificialPlayerCommand|Artificial Player Commands Test.\nBossDropRateCommand|设置大区Boss掉落倍率\nBotMoveCommand|Bot Movement Commands Test.\nCakeCommand|在当前位置召唤特殊血量的巨型蛋糕BOSS\nDropRateCommand|设置大区掉落倍率\nEnvironmentCommand|Environment Commands.\nExpRateCommand|设置大区经验倍率\nFMBotCommand|FmBot Commands.\nFishDropCommand|钓鱼掉落物品配置\nFishingRateCommand|设置大区钓鱼倍率\nForceVacCommand|强制捡起全图掉落\nHorntailCommand|在当前位置召唤黑龙\nItemVacCommand|捡起全图掉落\nMesoRateCommand|设置大区金币倍率\nOPQCommands|OPQ bot dev commands. Try: !opq help\nPapCommand|在当前位置召唤帕普拉图斯\nPianusCommand|在当前位置召唤皮亚奴斯\nPinkbeanCommand|在当前位置召唤品克缤\nPlayerNpcCommand|在当前位置生成一个玩家NPC\nPlayerNpcRemoveCommand|移除一个玩家NPC\nPmobCommand|在当前位置生成一个永久怪物\nPmobRemoveCommand|移除当前地图的永久怪物\nPnpcCommand|在当前位置生成一个永久NPC\nPnpcRemoveCommand|移除当前地图的永久NPC\nProItemCommand|生成自定义属性的装备\nQuestRateCommand|设置大区任务倍率\nReactorCommands|Reactor inspection and bot-attack test commands.\nServerMessageCommand|设置服务端滚动消息\nSetEqStatCommand|将背包的所有装备设置成指定属性\nTestDevCommand|Template Commands Test.\nTradeBotTestCommand|Trade Bot Commands.\nTravelRateCommand|设置大区传送倍率\nWarpToLifeCommand|传送到生物所在地图，不包含玩家\nZakumCommand|在当前位置召唤扎昆\nDebugCommand|打印debug信息\nIpListCommand|打印所有玩家ip列表\nSetCommand|把传入的参数存到服务端变量中，用于后续测试\nShowMoveLifeCommand|打印生物移动信息开关\nShowPacketsCommand|打印服务端收包开关\nShowSessionsCommand|打印sessions信息\nClearQuestCacheCommand|重载任务\nClearQuestCommand|重载指定任务\nDCAllCommand|下线所有玩家\nDevtestCommand|运行devtest.js脚本，在不重启服务的情况下测试某些内容\nEraseAllPNpcsCommand|移除所有玩家NPC\nGetAccCommand|展示指定玩家的账号名\nMapPlayersCommand|展示当前地图所有玩家\nSaveAllCommand|玩家存档\nServerAddChannelCommand|给指定大区添加频道\nServerAddWorldCommand|添加新大区\nServerRemoveChannelCommand|移除指定大区的最后一个频道\nServerRemoveWorldCommand|移除最后一个大区\nSetGmLevelCommand|给玩家设置GM\nShutdownCommand|关服\nSpawnAllPNpcsCommand|将所有玩家在当前地图生成玩家NPC\nSupplyRateCouponCommand|倍率卡使用开关\nWarpWorldCommand|转区";
+
+	private static Dictionary<string, string> descMap;
+
+	private static Dictionary<string, string> DescMap
+	{
+		get
+		{
+			if (descMap != null)
+			{
+				return descMap;
+			}
+			descMap = new Dictionary<string, string>(StringComparer.Ordinal);
+			string[] array = "\nChangeLanguageCommand|更改语言\nDisposeCommand|解卡npc对话\nDropLimitCommand|查看当前地图最大掉落数\nEnableAuthCommand|重置PIC或PIN验证冷却时间\nEquipLvCommand|展示装备等级\nGachaCommand|展示扭蛋机奖励\nGmCommand|给gm发送消息\nHelpCommand|展示可用的gm指令\nJoinEventCommand|参加当前的活动\nLeaveEventCommand|离开当前活动\nMapOwnerClaimCommand|开启地图归属\nOpenSymbolCommand|打开符文徽章窗（ARC/AUT）\nOpenHyperStatCommand|打开极限属性窗\nOpenInnerAbilityCommand|打开内在能力窗\nOpenFlameCommand|打开轮回星火页签\nOpenSoulCommand|打开灵魂武器页签\nOpenVMatrixCommand|打开V矩阵窗\nOpenHexaMatrixCommand|打开HEXA矩阵窗\nOnlineCommand|展示所有在线的玩家信息\nRanksCommand|展示玩家排名信息\nRatesCommand|展示玩家倍率\nReadPointsCommand|展示全部点数\nReportBugCommand|发送漏洞信息\nShowRatesCommand|展示大区和玩家倍率\nStaffCommand|展示服务端参与贡献的人员\nStatDexCommand|将属性点分配到敏捷\nStatIntCommand|将属性点分配到智力\nStatLukCommand|将属性点分配到运气\nStatStrCommand|将属性点分配到力量\nTimeCommand|展示当前服务器时间\nToggleExpCommand|开启或关闭经验获取\nUptimeCommand|展示当前服务器已运行时间\nBossHpCommand|展示当前地图的boss血量\nBuffMeCommand|激活GM buff\nGotoCommand|传送到预设地图\nMobHpCommand|展示当前地图的怪物血量\nWhatDropsFromCommand|查询怪物掉落\nWhoDropsCommand|查询物品掉落\nApCommand|设置属性点\nBombCommand|对玩家使用炸弹技能\nBuffCommand|激活指定buff\nBuffMapCommand|全图激活GM buff\nClearDropsCommand|清空当前玩家的掉落\nClearSavedLocationsCommand|清空玩家所有的存档点\nClearSlotCommand|清空当前玩家的指定背包栏\nDcCommand|强制玩家下线\nEmpowerMeCommand|激活所有可用的buff\nGachaListCommand|展示扭蛋机奖励\nGmShopCommand|打开GM商店\nHealCommand|血蓝加满\nHideCommand|隐身\nIdCommand|根据ID在手册中查询\nItemCommand|生成物品到背包\nItemDropCommand|生成物品到地上\nJailCommand|把某人关进监狱\nJobCommand|玩家转职\nLevelCommand|自定义等级，直接更改\nLevelProCommand|自定义等级，一级一级升\nLootCommand|展示您拥有的所有物品\nMaxSkillCommand|技能全满\nMaxStatCommand|状态全满\nMobSkillCommand|给当前地图的所有怪物应用指定技能\nReachCommand|传送到指定玩家的位置\nRechargeCommand|充值所有能够充值的消耗品\nResetSkillCommand|重置技能\nSearchCommand|全局搜索\nSetSlotCommand|设置所有背包格子数\nSetStatCommand|设置角色全部属性\nSpCommand|设置技能点\nSummonCommand|传送指定玩家到您的位置\nUnBugCommand|解卡动作\nUnHideCommand|取消隐身\nUnJailCommand|把某人从监狱中释放\nWarpAreaCommand|把当前地图附近的玩家传送到指定的地图\nWarpCommand|传送到指定地图\nWarpMapCommand|把当前地图的所有玩家传送到指定的地图\nWhereaMiCommand|展示当前地图信息\nBanCommand|封禁玩家\nChatCommand|开关GM聊天模式\nCheckDmgCommand|展示某个玩家的状态和伤害\nClosePortalCommand|关闭当前地图的传送点\nDebuffCommand|给附近玩家上debuff\nEndEventCommand|结束当前正在进行的活动\nExpedsCommand|展示所有正在进行的远征\nFaceCommand|改变玩家的脸型\nFameCommand|设置玩家人气\nFlyCommand|开启或关闭飞行模式\nGiveMesosCommand|给玩家发放金币\nGiveNxCommand|给玩家发放点券\nGiveRpCommand|给玩家发放奖励点数\nGiveVpCommand|给玩家发放投票点数\nHairCommand|改变玩家的发型\nHealMapCommand|回满全图血蓝\nHealPersonCommand|回满玩家血蓝\nHpMpCommand|设置玩家HP/MP\nHurtCommand|伤害玩家到1HP\nIgnoreCommand|添加或移除玩家的自动封禁白名单\nIgnoredCommand|展示所有自动封禁白名单玩家\nInMapCommand|展示当前地图的所有玩家\nKillAllCommand|击杀当前地图所有怪物\nKillCommand|击杀玩家\nKillMapCommand|击杀当前地图的所有玩家\nMaxEnergyCommand|道场能量条加满\nMaxHpMpCommand|设置玩家最大HP/MP\nMonitorCommand|开启或关闭监控某个玩家的发包\nMonitorsCommand|开启或关闭监控所有玩家的发包\nMusicCommand|在当前地图播放音乐\nMuteMapCommand|开启或关闭禁言\nNightCommand|将当前地图设置为夜晚\nNoticeCommand|发送全服公告\nNpcCommand|在当前的位置生成一个NPC\nOnlineTwoCommand|展示所有在线玩家\nOpenPortalCommand|开启当前地图的传送点\nPeCommand|从文件中读取发包内容模拟客户端发送\nPosCommand|展示玩家当前位置信息\nQuestCompleteCommand|完成一个任务\nQuestResetCommand|重置一个任务\nQuestStartCommand|开始一个任务\nReloadDropsCommand|重载掉落\nReloadEventsCommand|重载活动\nReloadHuntCommand|重新加载狩猎任务配置并重新发布任务\nReloadMapCommand|重载地图\nReloadPortalsCommand|重载传送点\nReloadShopsCommand|重载商店\nRipCommand|发送全服封禁公告\nSeedCommand|掉落所有的妙月种子\nSpawnCommand|在当前位置生成怪物\nStartEventCommand|在当前地图开启一个活动\nStartMapEventCommand|开启当前地图的官方活动，仅活动地图有效\nStopMapEventCommand|停止当前地图的官方活动，仅活动地图有效\nTimerAllCommand|给当前大区设置一个计时器\nTimerCommand|给玩家设置一个计时器\nTimerMapCommand|给当前地图设置一个计时器\nToggleCouponCommand|开启或关闭倍率卡\nUnBanCommand|解封玩家\nArtificialFreeMarketCommand|Artificial FM Test.\nArtificialPlayerCommand|Artificial Player Commands Test.\nBossDropRateCommand|设置大区Boss掉落倍率\nBotMoveCommand|Bot Movement Commands Test.\nCakeCommand|在当前位置召唤特殊血量的巨型蛋糕BOSS\nDropRateCommand|设置大区掉落倍率\nEnvironmentCommand|Environment Commands.\nExpRateCommand|设置大区经验倍率\nFMBotCommand|FmBot Commands.\nFishDropCommand|钓鱼掉落物品配置\nFishingRateCommand|设置大区钓鱼倍率\nForceVacCommand|强制捡起全图掉落\nHorntailCommand|在当前位置召唤黑龙\nItemVacCommand|捡起全图掉落\nMesoRateCommand|设置大区金币倍率\nOPQCommands|OPQ bot dev commands. Try: !opq help\nPapCommand|在当前位置召唤帕普拉图斯\nPianusCommand|在当前位置召唤皮亚奴斯\nPinkbeanCommand|在当前位置召唤品克缤\nPlayerNpcCommand|在当前位置生成一个玩家NPC\nPlayerNpcRemoveCommand|移除一个玩家NPC\nPmobCommand|在当前位置生成一个永久怪物\nPmobRemoveCommand|移除当前地图的永久怪物\nPnpcCommand|在当前位置生成一个永久NPC\nPnpcRemoveCommand|移除当前地图的永久NPC\nProItemCommand|生成自定义属性的装备\nQuestRateCommand|设置大区任务倍率\nReactorCommands|Reactor inspection and bot-attack test commands.\nServerMessageCommand|设置服务端滚动消息\nSetEqStatCommand|将背包的所有装备设置成指定属性\nTestDevCommand|Template Commands Test.\nTradeBotTestCommand|Trade Bot Commands.\nTravelRateCommand|设置大区传送倍率\nWarpToLifeCommand|传送到生物所在地图，不包含玩家\nZakumCommand|在当前位置召唤扎昆\nDebugCommand|打印debug信息\nIpListCommand|打印所有玩家ip列表\nSetCommand|把传入的参数存到服务端变量中，用于后续测试\nShowMoveLifeCommand|打印生物移动信息开关\nShowPacketsCommand|打印服务端收包开关\nShowSessionsCommand|打印sessions信息\nClearQuestCacheCommand|重载任务\nClearQuestCommand|重载指定任务\nDCAllCommand|下线所有玩家\nDevtestCommand|运行devtest.js脚本，在不重启服务的情况下测试某些内容\nEraseAllPNpcsCommand|移除所有玩家NPC\nGetAccCommand|展示指定玩家的账号名\nMapPlayersCommand|展示当前地图所有玩家\nSaveAllCommand|玩家存档\nServerAddChannelCommand|给指定大区添加频道\nServerAddWorldCommand|添加新大区\nServerRemoveChannelCommand|移除指定大区的最后一个频道\nServerRemoveWorldCommand|移除最后一个大区\nSetGmLevelCommand|给玩家设置GM\nShutdownCommand|关服\nSpawnAllPNpcsCommand|将所有玩家在当前地图生成玩家NPC\nSupplyRateCouponCommand|倍率卡使用开关\nWarpWorldCommand|转区".Split('\n');
+			for (int i = 0; i < array.Length; i++)
+			{
+				string text = array[i].Trim();
+				int num = text.IndexOf('|');
+				if (num > 0)
+				{
+					descMap[text.Substring(0, num)] = text.Substring(num + 1);
+				}
+			}
+			return descMap;
+		}
+	}
+
+	public static void Register(AdminApi api)
+	{
+		api.Post("/command/v1/getCommandListFromDB", GetList);
+		api.Post("/command/v1/updateCommand", Update);
+		api.Get("/command/v1/reloadEventsByGMCommand", (AdminCtx ctx) =>
+		{
+			ReloadScripts?.Invoke();
+			return (object)null;
+		});
+		api.Get("/command/v1/reloadPortalsByGMCommand", (AdminCtx ctx) =>
+		{
+			ReloadMaps?.Invoke();
+			return (object)null;
+		});
+		api.Get("/command/v1/reloadMapsByGMCommand", (AdminCtx ctx) =>
+		{
+			ReloadMaps?.Invoke();
+			return (object)null;
+		});
+	}
+
+	public static List<KeyValuePair<string, string>>[] ScriptCommandDescriptions(DbStore db)
+	{
+		EnsureSeed(db);
+		List<KeyValuePair<string, string>>[] array = new List<KeyValuePair<string, string>>[7];
+		HashSet<string> hashSet = new HashSet<string>(StringComparer.Ordinal);
+		for (int i = 0; i < array.Length; i++)
+		{
+			array[i] = new List<KeyValuePair<string, string>>();
+			foreach (DbRow row in db.Table("command_info").rows)
+			{
+				if (DbStore.Int(row, "level") == i && DbStore.Int(row, "enabled") != 0 && DescMap.TryGetValue(DbStore.Str(row, "clazz"), out var value))
+				{
+					string text = DbStore.Str(row, "syntax").ToLowerInvariant();
+					if (hashSet.Add(text))
+					{
+						array[i].Add(new KeyValuePair<string, string>(text, value));
+					}
+				}
+			}
+		}
+		return array;
+	}
+
+	private static void EnsureSeed(DbStore db)
+	{
+		if (!db.HasTable("command_info"))
+		{
+			return;
+		}
+		DbTable dbTable = db.Table("command_info");
+		if (dbTable.rows.Count > 0)
+		{
+			return;
+		}
+		string[] array = "\nhelp|HelpCommand|0\ncommands|HelpCommand|0\ndroplimit|DropLimitCommand|0\ntime|TimeCommand|0\ncredits|StaffCommand|0\nuptime|UptimeCommand|0\ngacha|GachaCommand|0\ndispose|DisposeCommand|0\nchangel|ChangeLanguageCommand|0\nequiplv|EquipLvCommand|0\nshowrates|ShowRatesCommand|0\nrates|RatesCommand|0\nonline|OnlineCommand|0\ngm|GmCommand|0\nreportbug|ReportBugCommand|0\npoints|ReadPointsCommand|0\njoinevent|JoinEventCommand|0\nleaveevent|LeaveEventCommand|0\nranks|RanksCommand|0\nstr|StatStrCommand|0\ndex|StatDexCommand|0\nint|StatIntCommand|0\nluk|StatLukCommand|0\nenableauth|EnableAuthCommand|0\ntoggleexp|ToggleExpCommand|0\nmylawn|MapOwnerClaimCommand|0\nbosshp|BossHpCommand|1\nmobhp|MobHpCommand|1\nwhatdropsfrom|WhatDropsFromCommand|1\nwhodrops|WhoDropsCommand|1\nbuffme|BuffMeCommand|1\ngoto|GotoCommand|1\nrecharge|RechargeCommand|2\nwhereami|WhereaMiCommand|2\nhide|HideCommand|2\nunhide|UnHideCommand|2\nsp|SpCommand|2\nap|ApCommand|2\nempowerme|EmpowerMeCommand|2\nbuffmap|BuffMapCommand|2\nbuff|BuffCommand|2\nbomb|BombCommand|2\ndc|DcCommand|2\ncleardrops|ClearDropsCommand|2\nclearslot|ClearSlotCommand|2\nclearsavelocs|ClearSavedLocationsCommand|2\nwarp|WarpCommand|2\nwarphere|SummonCommand|2\nsummon|SummonCommand|2\nwarpto|ReachCommand|2\nreach|ReachCommand|2\nfollow|ReachCommand|2\ngmshop|GmShopCommand|2\nheal|HealCommand|2\nitem|ItemCommand|2\ndrop|ItemDropCommand|2\nlevel|LevelCommand|2\nlevelpro|LevelProCommand|2\nsetslot|SetSlotCommand|2\nsetstat|SetStatCommand|2\nmaxstat|MaxStatCommand|2\nmaxskill|MaxSkillCommand|2\nresetskill|ResetSkillCommand|2\nsearch|SearchCommand|2\njail|JailCommand|2\nunjail|UnJailCommand|2\njob|JobCommand|2\nunbug|UnBugCommand|2\nid|IdCommand|2\ngachalist|GachaListCommand|2\nloot|LootCommand|2\nmobskill|MobSkillCommand|2\nwarpmap|WarpMapCommand|2\nwarparea|WarpAreaCommand|2\ndebuff|DebuffCommand|3\nfly|FlyCommand|3\nspawn|SpawnCommand|3\nmutemap|MuteMapCommand|3\ncheckdmg|CheckDmgCommand|3\ninmap|InMapCommand|3\nreloadevents|ReloadEventsCommand|3\nreloaddrops|ReloadDropsCommand|3\nreloadportals|ReloadPortalsCommand|3\nreloadmap|ReloadMapCommand|3\nreloadshops|ReloadShopsCommand|3\nhpmp|HpMpCommand|3\nmaxhpmp|MaxHpMpCommand|3\nmusic|MusicCommand|3\nmonitor|MonitorCommand|3\nmonitors|MonitorsCommand|3\nignore|IgnoreCommand|3\nignored|IgnoredCommand|3\npos|PosCommand|3\ntogglecoupon|ToggleCouponCommand|3\ntogglewhitechat|ChatCommand|3\nfame|FameCommand|3\ngivenx|GiveNxCommand|3\ngivevp|GiveVpCommand|3\ngivems|GiveMesosCommand|3\ngiverp|GiveRpCommand|3\nexpeds|ExpedsCommand|3\nkill|KillCommand|3\nseed|SeedCommand|3\nmaxenergy|MaxEnergyCommand|3\nkillall|KillAllCommand|3\nnotice|NoticeCommand|3\nrip|RipCommand|3\nopenportal|OpenPortalCommand|3\ncloseportal|ClosePortalCommand|3\npe|PeCommand|3\nstartevent|StartEventCommand|3\nendevent|EndEventCommand|3\nstartmapevent|StartMapEventCommand|3\nstopmapevent|StopMapEventCommand|3\nonline2|OnlineTwoCommand|3\nban|BanCommand|3\nunban|UnBanCommand|3\nhealmap|HealMapCommand|3\nhealperson|HealPersonCommand|3\nhurt|HurtCommand|3\nkillmap|KillMapCommand|3\nnight|NightCommand|3\nnpc|NpcCommand|3\nface|FaceCommand|3\nhair|HairCommand|3\nstartquest|QuestStartCommand|3\ncompletequest|QuestCompleteCommand|3\nresetquest|QuestResetCommand|3\ntimer|TimerCommand|3\ntimermap|TimerMapCommand|3\ntimerall|TimerAllCommand|3\nreloadhunt|ReloadHuntCommand|3\nservermessage|ServerMessageCommand|4\nproitem|ProItemCommand|4\nseteqstat|SetEqStatCommand|4\nexprate|ExpRateCommand|4\nmesorate|MesoRateCommand|4\ndroprate|DropRateCommand|4\nbossdroprate|BossDropRateCommand|4\nquestrate|QuestRateCommand|4\ntravelrate|TravelRateCommand|4\nfishrate|FishingRateCommand|4\nitemvac|ItemVacCommand|4\nforcevac|ForceVacCommand|4\nzakum|ZakumCommand|4\nhorntail|HorntailCommand|4\npinkbean|PinkbeanCommand|4\npap|PapCommand|4\npianus|PianusCommand|4\ncake|CakeCommand|4\nplayernpc|PlayerNpcCommand|4\nplayernpcremove|PlayerNpcRemoveCommand|4\npnpc|PnpcCommand|4\npnpcremove|PnpcRemoveCommand|4\npmob|PmobCommand|4\npmobremove|PmobRemoveCommand|4\nwarptolife|WarpToLifeCommand|4\nfishdrop|FishDropCommand|4\nbot|ArtificialPlayerCommand|4\nmove|BotMoveCommand|4\nenv|EnvironmentCommand|4\nbetafmshop|ArtificialFreeMarketCommand|4\nfmbot|FMBotCommand|4\ntradebot|TradeBotTestCommand|4\ntest|TestDevCommand|4\nopq|OPQCommands|4\nreactor|ReactorCommands|4\ndebug|DebugCommand|5\nset|SetCommand|5\nshowpackets|ShowPacketsCommand|5\nshowmovelife|ShowMoveLifeCommand|5\nshowsessions|ShowSessionsCommand|5\niplist|IpListCommand|5\nsetgmlevel|SetGmLevelCommand|6\nwarpworld|WarpWorldCommand|6\nsaveall|SaveAllCommand|6\ndcall|DCAllCommand|6\nmapplayers|MapPlayersCommand|6\ngetacc|GetAccCommand|6\nshutdown|ShutdownCommand|6\nclearquestcache|ClearQuestCacheCommand|6\nclearquest|ClearQuestCommand|6\nsupplyratecoupon|SupplyRateCouponCommand|6\nspawnallpnpcs|SpawnAllPNpcsCommand|6\neraseallpnpcs|EraseAllPNpcsCommand|6\naddchannel|ServerAddChannelCommand|6\naddworld|ServerAddWorldCommand|6\nremovechannel|ServerRemoveChannelCommand|6\nremoveworld|ServerRemoveWorldCommand|6\ndevtest|DevtestCommand|6\n扭蛋奖励|GachaCommand|0\n全部加力量|StatStrCommand|0\n全部加敏捷|StatDexCommand|0\n全部加智力|StatIntCommand|0\n全部加运气|StatLukCommand|0\n装备信息|EquipLvCommand|0\n倍率|ShowRatesCommand|0\njk|DisposeCommand|0\n解卡|DisposeCommand|0\n帮助|HelpCommand|0\nsymbol|OpenSymbolCommand|3\nhyperstat|OpenHyperStatCommand|3\ninnerability|OpenInnerAbilityCommand|3\nflame|OpenFlameCommand|3\nsoul|OpenSoulCommand|3\nvmatrix|OpenVMatrixCommand|3\nhexa|OpenHexaMatrixCommand|3\n符文徽章|OpenSymbolCommand|3\n极限属性|OpenHyperStatCommand|3\n内在能力|OpenInnerAbilityCommand|3\n轮回星火|OpenFlameCommand|3\n灵魂武器|OpenSoulCommand|3\nV矩阵|OpenVMatrixCommand|3\nHEXA矩阵|OpenHexaMatrixCommand|3".Split('\n');
+		for (int i = 0; i < array.Length; i++)
+		{
+			string text = array[i].Trim();
+			if (text.Length != 0 && text[0] != '#')
+			{
+				string[] array2 = text.Split('|');
+				if (array2.Length >= 3)
+				{
+					dbTable.Insert(new DbRow
+					{
+						["syntax"] = array2[0],
+						["clazz"] = array2[1],
+						["level"] = long.Parse(array2[2]),
+						["default_level"] = long.Parse(array2[2]),
+						["enabled"] = 1L
+					});
+				}
+			}
+		}
+		db.Save();
+	}
+
+	private static object GetList(AdminCtx ctx)
+	{
+		Dictionary<string, object> o = AdminJson.AsDict(ctx.Body) ?? new Dictionary<string, object>();
+		int pageNo = AdminJson.GetInt(o, "pageNo", 1);
+		int pageSize = AdminJson.GetInt(o, "pageSize", 20);
+		bool onlyTotal = AdminJson.GetBool(o, "onlyTotal");
+		bool notPage = AdminJson.GetBool(o, "notPage");
+		string syntax = AdminJson.GetString(o, "syntax");
+		List<object> levelList = AdminJson.GetList(o, "levelList");
+		List<object> defaultLevelList = AdminJson.GetList(o, "defaultLevelList");
+		bool hasEnabled = AdminJson.Get(o, "enabled") != null;
+		bool enabled = AdminJson.GetBool(o, "enabled");
+		return AdminMainThread.Run(() =>
+		{
+			DbStore dbStore = AdminBackend.RequireDb();
+			EnsureSeed(dbStore);
+			List<DbRow> list = new List<DbRow>();
+			foreach (DbRow row in dbStore.Table("command_info").rows)
+			{
+				long value = DbStore.Long(row, "level", 0L);
+				long value2 = DbStore.Long(row, "default_level", 0L);
+				if ((levelList == null || levelList.Count <= 0 || Contains(levelList, value)) && (defaultLevelList == null || defaultLevelList.Count <= 0 || Contains(defaultLevelList, value2)) && (string.IsNullOrEmpty(syntax) || DbStore.Str(row, "syntax").IndexOf(syntax, StringComparison.OrdinalIgnoreCase) >= 0) && (!hasEnabled || DbStore.Long(row, "enabled", 0L) != 0 == enabled))
+				{
+					list.Add(row);
+				}
+			}
+			list.Sort((DbRow a, DbRow b) =>
+			{
+				int num = DbStore.Long(a, "default_level", 0L).CompareTo(DbStore.Long(b, "default_level", 0L));
+				return (num == 0) ? DbStore.Str(a, "syntax").CompareTo(DbStore.Str(b, "syntax")) : num;
+			});
+			return AdminDbUtil.Page(list, pageNo, pageSize, onlyTotal, notPage, Dto);
+		});
+	}
+
+	private static bool Contains(List<object> list, long value)
+	{
+		foreach (object item in list)
+		{
+			if (AdminJson.GetLong(new Dictionary<string, object> { ["v"] = item }, "v", 0L) == value)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static Dictionary<string, object> Dto(DbRow row)
+	{
+		string text = DbStore.Str(row, "clazz");
+		if (!DescMap.TryGetValue(text, out var value))
+		{
+			value = "";
+		}
+		return AdminJson.Obj("id", DbStore.Long(row, "id", 0L), "level", DbStore.Long(row, "level", 0L), "syntax", DbStore.Str(row, "syntax"), "defaultLevel", DbStore.Long(row, "default_level", 0L), "clazz", text, "description", value, "enabled", DbStore.Long(row, "enabled", 0L) != 0);
+	}
+
+	private static object Update(AdminCtx ctx)
+	{
+		Dictionary<string, object> form = AdminJson.AsDict(ctx.Body);
+		if (form == null)
+		{
+			throw new AdminApiException("缺少命令数据");
+		}
+		long id = AdminJson.GetLong(form, "id", 0L);
+		return AdminMainThread.Run((Func<object>)(() =>
+		{
+			DbStore dbStore = AdminBackend.RequireDb();
+			EnsureSeed(dbStore);
+			DbTable dbTable = dbStore.Table("command_info");
+			if (dbTable.Find(DbStore.Eq("id", id)) == null)
+			{
+				throw new AdminApiException("命令不存在: " + id);
+			}
+			DbRow dbRow = new DbRow();
+			if (AdminJson.Get(form, "level") != null)
+			{
+				AdminDbUtil.Set(dbRow, "level", AdminJson.GetLong(form, "level", 0L));
+			}
+			if (AdminJson.Get(form, "enabled") != null)
+			{
+				AdminDbUtil.Set(dbRow, "enabled", (long)(AdminJson.GetBool(form, "enabled") ? 1 : 0));
+			}
+			dbTable.Update(DbStore.Eq("id", id), dbRow);
+			dbStore.Save();
+			return Dto(dbTable.Find(DbStore.Eq("id", id)));
+		}), 8000);
+	}
+}

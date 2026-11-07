@@ -1,0 +1,18 @@
+{
+  "description": "Best-effort ILSpy decompilation of user-provided Unity Mono Assembly-CSharp.dll, not original Unity project.",
+  "generated_utc": "2026-11-07T01:36:16.648688+00:00",
+  "method": "ICSharpCode ILSpy ilspycmd -p or -o",
+  "source_file_count": 1003,
+  "csharp_source_bytes": 7029029,
+  "line_count": 232187,
+  "file_extension_counts": {
+    ".cs": 1003,
+    ".csproj": 1
+  },
+  "original_assembly_sha256": "cfaa6d7f088a66259eb6a29c6e55dacfe2c6d3029c21d813daa7951d030c14a1",
+  "limitations": [
+    "Not the original author source; comments and original project metadata are lost",
+    "No full Unity Editor project or large game resource pack in this repository",
+    "Not compiled or multiplayer runtime tested"
+  ]
+}

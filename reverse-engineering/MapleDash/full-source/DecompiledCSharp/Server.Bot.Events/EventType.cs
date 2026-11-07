@@ -1,0 +1,14 @@
+namespace Server.Bot.Events;
+
+public enum EventType
+{
+	GACHAPON_REWARD,
+	LEVEL_UP,
+	SCROLLING,
+	ITEM_MEGAPHONE,
+	CHAT_MEGAPHONE,
+	MASTERY_RESULT,
+	EMOTE,
+	CHAT_GENERAL,
+	MAP_ENTERED
+}

@@ -1,0 +1,20 @@
+public enum CashOperation
+{
+	Open,
+	Close,
+	Read,
+	Buy,
+	Gift,
+	ClaimGifts,
+	Withdraw,
+	Deposit,
+	WishList,
+	ExpandInventory,
+	ExpandCharacters,
+	Equip,
+	Unequip,
+	AdjustBalance,
+	RedeemCode,
+	ExpandStorage,
+	OpenSurprise
+}

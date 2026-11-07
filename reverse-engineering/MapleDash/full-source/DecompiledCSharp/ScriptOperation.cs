@@ -1,0 +1,19 @@
+public enum ScriptOperation
+{
+	Open,
+	Call,
+	Close,
+	SaveLocation,
+	PeekLocation,
+	GetLocation,
+	ClearLocation,
+	GachaDraw,
+	GetStoredVar,
+	SetStoredVar,
+	GetQuestCustomData,
+	SetQuestCustomData,
+	GetMaxClassLevel,
+	GainFame,
+	AwardEventQuestPoints,
+	GetRebirthSettings
+}

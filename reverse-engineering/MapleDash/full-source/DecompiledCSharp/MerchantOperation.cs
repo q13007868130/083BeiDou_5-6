@@ -1,0 +1,19 @@
+public enum MerchantOperation
+{
+	Box,
+	Create,
+	AddItem,
+	TakeItemBack,
+	RemoveItem,
+	Buy,
+	WithdrawMesos,
+	Organize,
+	Close,
+	MaintenanceOff,
+	SetOpen,
+	AddBlacklist,
+	RemoveBlacklist,
+	Retrieve,
+	Tick,
+	Snapshot
+}

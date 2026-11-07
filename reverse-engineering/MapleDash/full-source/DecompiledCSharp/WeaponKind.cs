@@ -1,0 +1,19 @@
+public enum WeaponKind
+{
+	sword,
+	dagger,
+	bow,
+	staff,
+	mace,
+	greatsword,
+	axe,
+	wand,
+	greataxe,
+	greatmace,
+	spear,
+	polearm,
+	crossbow,
+	claw,
+	knuckle,
+	gun
+}
