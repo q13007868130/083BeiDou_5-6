@@ -1,0 +1,27 @@
+name: MapleDash - auth hardening smoke test
+on:
+  push:
+    branches:
+      - reverse-engineering/mapledash-unity-20261106
+    paths:
+      - 'reverse-engineering/MapleDash/server-readiness/**'
+      - '.github/workflows/mapledash-auth-smoke.yml'
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  auth-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            reverse-engineering/MapleDash/server-readiness
+          sparse-checkout-cone-mode: false
+          filter: blob:none
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Compile and test decompiled auth logic with security candidate
+        run: dotnet run --project reverse-engineering/MapleDash/server-readiness/tests/MapleDash.AuthSmoke/MapleDash.AuthSmoke.csproj --configuration Release
