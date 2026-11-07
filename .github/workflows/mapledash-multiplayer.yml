@@ -32,3 +32,6 @@ jobs:
         run: dotnet build reverse-engineering/MapleDash/variants/multiplayer/BridgeCompile/MapleDash.Multiplayer.UnityBridgeCompile.csproj -c Release
       - name: Run real SDK two-client network integration
         run: dotnet run --project reverse-engineering/MapleDash/variants/multiplayer/ClientSmoke/MapleDash.Multiplayer.ClientSmoke.csproj -c Release
+
+      - name: Run world roster state reducer integration
+        run: dotnet run --project reverse-engineering/MapleDash/variants/multiplayer/StateSmoke/MapleDash.Multiplayer.StateSmoke.csproj -c Release

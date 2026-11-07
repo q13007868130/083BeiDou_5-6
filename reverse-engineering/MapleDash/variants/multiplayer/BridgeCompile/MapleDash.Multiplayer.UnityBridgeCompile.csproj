@@ -7,5 +7,6 @@
   <ItemGroup>
     <ProjectReference Include="../Client/MapleDash.Multiplayer.Client.csproj" />
     <Compile Include="../UnityBridge/UnityRemoteWorldBridge.cs" Link="UnityRemoteWorldBridge.cs" />
+    <Compile Include="../UnityBridge/UnityRemotePlayerPresenter.cs" Link="UnityRemotePlayerPresenter.cs" />
   </ItemGroup>
 </Project>
