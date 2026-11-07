@@ -11,7 +11,7 @@ permissions:
 jobs:
   network-smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,5 +24,11 @@ jobs:
           dotnet-version: 8.0.x
       - name: Build standalone server
         run: dotnet build reverse-engineering/MapleDash/variants/multiplayer/Server/MapleDash.Multiplayer.Server.csproj -c Release
-      - name: Run real two-client loopback integration
+      - name: Run original two-client network integration
         run: dotnet run --project reverse-engineering/MapleDash/variants/multiplayer/Smoke/MapleDash.Multiplayer.Smoke.csproj -c Release
+      - name: Build reusable .NET Standard SDK
+        run: dotnet build reverse-engineering/MapleDash/variants/multiplayer/Client/MapleDash.Multiplayer.Client.csproj -c Release
+      - name: Compile candidate Unity bridge against test stubs
+        run: dotnet build reverse-engineering/MapleDash/variants/multiplayer/BridgeCompile/MapleDash.Multiplayer.UnityBridgeCompile.csproj -c Release
+      - name: Run real SDK two-client network integration
+        run: dotnet run --project reverse-engineering/MapleDash/variants/multiplayer/ClientSmoke/MapleDash.Multiplayer.ClientSmoke.csproj -c Release

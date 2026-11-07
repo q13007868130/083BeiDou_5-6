@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Client/MapleDash.Multiplayer.Client.csproj" />
+    <Compile Include="../UnityBridge/UnityRemoteWorldBridge.cs" Link="UnityRemoteWorldBridge.cs" />
+  </ItemGroup>
+</Project>
