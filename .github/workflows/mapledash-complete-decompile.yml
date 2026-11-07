@@ -46,7 +46,7 @@ jobs:
           $toolDir = Join-Path $env:RUNNER_TEMP "ilspytools"
           dotnet tool install --tool-path "$toolDir" ilspycmd
           if ($LASTEXITCODE -ne 0) { throw 'Could not install ILSpy CLI' }
-          $exe = Join-Path $toolDir 'ilspycmd.exe'
+          $exe = Join-Path $toolDir 'ilspycmd.cmd'
           if (-not (Test-Path $exe)) { Get-ChildItem -Force $toolDir; throw 'ILSpy shim not found in explicit installation directory' }
           & $exe --version
           New-Item -Force -ItemType Directory -Path "$root/DecompiledCSharp" | Out-Null
