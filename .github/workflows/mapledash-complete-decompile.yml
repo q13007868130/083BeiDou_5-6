@@ -1,0 +1,87 @@
+name: MapleDash - decompile full Unity Mono game assembly
+on:
+  push:
+    branches:
+      - reverse-engineering/mapledash-unity-20261106
+    paths:
+      - '.github/workflows/mapledash-complete-decompile.yml'
+      - 'reverse-engineering/MapleDash/full-source/inputs/**'
+      - 'reverse-engineering/MapleDash/full-source/scripts/**'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: mapledash-full-decompile-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  decompile:
+    runs-on: windows-latest
+    timeout-minutes: 50
+    steps:
+      - name: Checkout only decompilation files (avoid large game assets)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          sparse-checkout: |
+            .github/workflows/mapledash-complete-decompile.yml
+            reverse-engineering/MapleDash/full-source
+          sparse-checkout-cone-mode: false
+          filter: blob:none
+          fetch-depth: 1
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            9.0.x
+            10.0.x
+      - name: Reconstruct and verify original assembly
+        shell: pwsh
+        run: |
+          python reverse-engineering/MapleDash/full-source/scripts/reassemble.py
+      - name: Install ILSpy CLI and export all C# source
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $root = 'reverse-engineering/MapleDash/full-source'
+          dotnet tool install --global ilspycmd
+          if ($LASTEXITCODE -ne 0) { throw 'Could not install ILSpy CLI' }
+          $exe = Join-Path $env:USERPROFILE '.dotnet/tools/ilspycmd.exe'
+          & $exe --version
+          New-Item -Force -ItemType Directory -Path "$root/DecompiledCSharp" | Out-Null
+          & $exe -p -o "$root/DecompiledCSharp" "$root/tmp/Assembly-CSharp.dll"
+          if ($LASTEXITCODE -ne 0) {
+            Write-Warning 'ILSpy project mode failed: try single-file decompilation.'
+            Remove-Item "$root/DecompiledCSharp" -Recurse -Force
+            New-Item -Force -ItemType Directory -Path "$root/DecompiledCSharp" | Out-Null
+            & $exe -o "$root/DecompiledCSharp" "$root/tmp/Assembly-CSharp.dll"
+            if ($LASTEXITCODE -ne 0) { throw 'Both ILSpy modes failed.' }
+          }
+      - name: Audit produced source
+        shell: pwsh
+        run: |
+          python reverse-engineering/MapleDash/full-source/scripts/audit.py
+      - name: Commit generated source to current isolated branch
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 'reverse-engineering/MapleDash/full-source/DecompiledCSharp' 'reverse-engineering/MapleDash/full-source/decompilation-audit.json'
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host 'No generated source changes.'
+            exit 0
+          }
+          git commit -m 'Add full ILSpy CSharp decompilation from MapleDash Windows Mono assembly'
+          if ($LASTEXITCODE -ne 0) { throw 'Could not commit generated source.' }
+          git push origin "HEAD:refs/heads/${{ github.ref_name }}"
+          if ($LASTEXITCODE -ne 0) { throw 'Could not push generated source.' }
+      - name: Upload generated CSharp as CI artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: MapleDash-DecompiledCSharp
+          path: |
+            reverse-engineering/MapleDash/full-source/DecompiledCSharp
+            reverse-engineering/MapleDash/full-source/decompilation-audit.json
+          if-no-files-found: warn
