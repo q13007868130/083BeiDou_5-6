@@ -1,0 +1,28 @@
+name: MapleDash multiplayer network CI
+on:
+  push:
+    branches: [mapledash/multiplayer]
+    paths:
+      - '.github/workflows/mapledash-multiplayer.yml'
+      - 'reverse-engineering/MapleDash/variants/multiplayer/**'
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  network-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            reverse-engineering/MapleDash/variants/multiplayer
+          sparse-checkout-cone-mode: false
+          filter: blob:none
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Build standalone server
+        run: dotnet build reverse-engineering/MapleDash/variants/multiplayer/Server/MapleDash.Multiplayer.Server.csproj -c Release
+      - name: Run real two-client loopback integration
+        run: dotnet run --project reverse-engineering/MapleDash/variants/multiplayer/Smoke/MapleDash.Multiplayer.Smoke.csproj -c Release
