@@ -9,7 +9,7 @@ using UnityEngine;
 public sealed class UnityRemotePlayerPresenter : MonoBehaviour
 {
     [SerializeField] private UnityRemoteWorldBridge bridge;
-    [SerializeField] private Transform avatarRoot;
+    [SerializeField] private Transform avatarRoot = null;
     [SerializeField] private float worldUnitsPerNetworkUnit = 0.04f;
     [SerializeField] private bool invertNetworkY = true;
     [SerializeField] private float depth = 0f;
