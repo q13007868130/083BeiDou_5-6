@@ -1,0 +1,25 @@
+name: MapleDash singleplayer source checks
+on:
+  push:
+    branches: [mapledash/singleplayer]
+    paths:
+      - '.github/workflows/mapledash-singleplayer.yml'
+      - 'reverse-engineering/MapleDash/variants/singleplayer/**'
+      - 'reverse-engineering/MapleDash/server-readiness/hardening/**'
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  offline-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            reverse-engineering/MapleDash/full-source/DecompiledCSharp
+            reverse-engineering/MapleDash/server-readiness/hardening
+            reverse-engineering/MapleDash/variants/singleplayer
+          sparse-checkout-cone-mode: false
+          filter: blob:none
+      - name: Offline source and auth overlay checks
+        run: python3 -m unittest discover -s reverse-engineering/MapleDash/variants/singleplayer/tests -v
